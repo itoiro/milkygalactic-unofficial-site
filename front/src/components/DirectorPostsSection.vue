@@ -5,42 +5,42 @@ const posts = [
   {
     date: '2025.08.02',
     title: 'サイボーグ=人間 / アンドロイド=人間じゃない',
-    url: 'https://x.com/maru_turu/status/1951621669338206595?s=20',
+    url: 'https://twitter.com/maru_turu/status/1951621669338206595',
   },
   {
     date: '2025.08.16',
     title: 'ギャラスピに保護されたばかりのアカネ',
-    url: 'https://x.com/maru_turu/status/1956677116143308936?s=20',
+    url: 'https://twitter.com/maru_turu/status/1956677116143308936',
   },
   {
     date: '2025.08.16',
     title: 'アカネはカラコン',
-    url: 'https://x.com/maru_turu/status/1956686826246381757?s=20',
+    url: 'https://twitter.com/maru_turu/status/1956686826246381757',
   },
   {
     date: '2025.09.03',
     title: 'なんで発注書もらってないの？',
-    url: 'https://x.com/maru_turu/status/1963202315990552696?s=20',
+    url: 'https://twitter.com/maru_turu/status/1963202315990552696',
   },
   {
     date: '2025.09.05',
     title: 'R18',
-    url: 'https://x.com/maru_turu/status/1963959009494647168?s=20',
+    url: 'https://twitter.com/maru_turu/status/1963959009494647168',
   },
   {
     date: '2025.09.09',
     title: 'ロボコップ',
-    url: 'https://x.com/maru_turu/status/1965384278705070565?s=20',
+    url: 'https://twitter.com/maru_turu/status/1965384278705070565',
   },
   {
     date: '2025.09.07',
     title: '初代総長とあかねちゃんとすみれちゃん',
-    url: 'https://x.com/maru_turu/status/1964647239017701488?s=20',
+    url: 'https://twitter.com/maru_turu/status/1964647239017701488',
   },
   {
     date: '2020.09.21',
     title: '過去のカートとマックスらしき人物たち',
-    url: 'https://x.com/maru_turu/status/1308009054187347969',
+    url: 'https://twitter.com/maru_turu/status/1308009054187347969',
   },
 ]
 
@@ -82,19 +82,30 @@ onMounted(() => {
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div
-        v-for="post in posts"
-        :key="post.url"
-        class="border-2 border-accent bg-card p-4 space-y-2"
-      >
+      <div v-for="post in posts" :key="post.url" class="border-2 border-accent bg-card p-4 space-y-2">
         <div class="flex items-center justify-between text-xs text-muted-foreground">
           <span>{{ post.date }}</span>
         </div>
         <div class="text-sm font-semibold">{{ post.title }}</div>
-        <blockquote class="twitter-tweet" data-theme="dark">
-          <a :href="post.url">{{ post.url }}</a>
-        </blockquote>
+        <div class="tweet-embed">
+          <blockquote class="twitter-tweet" data-theme="dark">
+            <a :href="post.url">{{ post.url }}</a>
+          </blockquote>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.tweet-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.tweet-embed .twitter-tweet,
+.tweet-embed iframe {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+</style>

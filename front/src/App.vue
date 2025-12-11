@@ -86,10 +86,7 @@ const changeSection = (section) => {
               <p class="text-sm">監督による解説や、関連しそうな作品のポストまとめ</p>
             </div>
                     
-            <div
-              class="border-2 border-primary p-4 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
-              @click="changeSection('comics')"
-            >
+            <div class="border-2 border-primary p-4 transition-colors opacity-60">
               <div class="flex items-center gap-3 mb-2">
                 <span class="text-2xl">📚</span>
                 <h3>キャラクター情報</h3>
@@ -117,12 +114,7 @@ const changeSection = (section) => {
               <div class="mt-3 text-sm text-accent">インタビュー一覧 ▶</div>
             </div>
 
-            <a
-              class="border-2 border-foreground p-4 hover:border-accent transition-colors block"
-              href="https://ananweb.jp/categories/entertainment/70151"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <div class="border-2 border-foreground p-4 opacity-60">
               <div class="flex items-center gap-2 mb-2">
                 <span class="px-2 py-1 bg-secondary text-secondary-foreground text-xs">MAGAZINE</span>
                 <h3>雑誌掲載情報</h3>
@@ -130,8 +122,7 @@ const changeSection = (section) => {
               <p class="text-sm text-muted-foreground">
                 Comming soon ...
               </p>
-                <!-- <div class="mt-3 text-sm text-secondary">anan掲載記事へ ▶</div> -->
-              </a>
+            </div>
             </div>
           </div>
 

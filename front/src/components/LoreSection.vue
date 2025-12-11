@@ -1,45 +1,18 @@
 <script setup>
 import { nextTick, onMounted } from 'vue'
 
-const characters = [
-  {
-    name: '主人公 アキラ',
-    role: '次元超越者',
-    age: '17歳',
-    description: '異世界からやってきた謎の力を持つ少年。正義感が強く、仲間思い。',
-  },
-  {
-    name: 'ヒロイン サクラ',
-    role: '時空管理者',
-    age: '16歳',
-    description: '時間を操る能力を持つ少女。クールだが内面は優しい。',
-  },
-  {
-    name: 'サブキャラ レン',
-    role: 'サポーター',
-    age: '18歳',
-    description: '主人公の親友。明るく場を盛り上げるムードメーカー。',
-  },
-  {
-    name: 'ライバル カイト',
-    role: '対立者',
-    age: '19歳',
-    description: '主人公と対立する強敵。複雑な過去を持つ。',
-  },
-]
-
 const loreTweets = [
-  { date: '2025.07.26', label: '強化人間', url: 'https://x.com/MGUJapan/status/1949062140326748334?s=20' },
-  { date: '2025.08.02', label: 'サイボーグ', url: 'https://x.com/MGUJapan/status/1951598861404741686?s=20' },
-  { date: '2025.08.09', label: 'バルナディア合星連邦', url: 'https://x.com/MGUJapan/status/1954135576560455835?s=20' },
-  { date: '2025.08.16', label: 'ギャラクシースピリッツ初代総長', url: 'https://x.com/MGUJapan/status/1956672289417605516?s=20' },
-  { date: '2025.08.23', label: 'ギャル軍団', url: 'https://x.com/MGUJapan/status/1959209011120935232?s=20' },
-  { date: '2025.09.03', label: 'ドーズ&スミス防衛サービス', url: 'https://x.com/MGUJapan/status/1963195266707714550?s=20' },
-  { date: '2025.09.07', label: '千賀浜愚連隊', url: 'https://x.com/MGUJapan/status/1964644819025715711?s=20' },
-  { date: '2025.09.09', label: 'アサミ巡査', url: 'https://x.com/MGUJapan/status/1965369601941807462?s=20' },
-  { date: '2025.09.13', label: 'マキナの両親（来栖俊一郎 / 真里亜）', url: 'https://x.com/MGUJapan/status/1966819146307694764?s=20' },
-  { date: '2025.10.04', label: '水無瀬ミナミ', url: 'https://x.com/MGUJapan/status/1974429290038014132?s=20' },
-  { date: '2025.11.01', label: 'エリカ・ブレイズと大道寺朱音', url: 'https://x.com/MGUJapan/status/1984576161330954367?s=20' },
+  { date: '2025.07.26', label: '強化人間', url: 'https://twitter.com/MGUJapan/status/1949062140326748334' },
+  { date: '2025.08.02', label: 'サイボーグ', url: 'https://twitter.com/MGUJapan/status/1951598861404741686' },
+  { date: '2025.08.09', label: 'バルナディア合星連邦', url: 'https://twitter.com/MGUJapan/status/1954135576560455835' },
+  { date: '2025.08.16', label: 'ギャラクシースピリッツ初代総長', url: 'https://twitter.com/MGUJapan/status/1956672289417605516' },
+  { date: '2025.08.23', label: 'ギャル軍団', url: 'https://twitter.com/MGUJapan/status/1959209011120935232' },
+  { date: '2025.09.03', label: 'ドーズ&スミス防衛サービス', url: 'https://twitter.com/MGUJapan/status/1963195266707714550' },
+  { date: '2025.09.07', label: '千賀浜愚連隊', url: 'https://twitter.com/MGUJapan/status/1964644819025715711' },
+  { date: '2025.09.09', label: 'アサミ巡査', url: 'https://twitter.com/MGUJapan/status/1965369601941807462' },
+  { date: '2025.09.13', label: 'マキナの両親（来栖俊一郎 / 真里亜）', url: 'https://twitter.com/MGUJapan/status/1966819146307694764' },
+  { date: '2025.10.04', label: '水無瀬ミナミ', url: 'https://twitter.com/MGUJapan/status/1974429290038014132' },
+  { date: '2025.11.01', label: 'エリカ・ブレイズと大道寺朱音', url: 'https://twitter.com/MGUJapan/status/1984576161330954367' },
 ]
 
 const loadTwitterWidgets = () => {
@@ -90,43 +63,23 @@ onMounted(() => {
     </div>
 
     <div class="mb-8">
-      <h3 class="mb-4 pb-2 border-b-2 border-secondary">👥 主要キャラクター</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div
-          v-for="(char, index) in characters"
-          :key="index"
-          class="border-2 border-foreground bg-card p-4 hover:border-secondary transition-colors"
-        >
-          <div class="flex items-start justify-between mb-2">
-            <h4>{{ char.name }}</h4>
-            <span class="px-2 py-1 border-2 border-secondary text-xs">
-              {{ char.age }}
-            </span>
-          </div>
-          <div class="text-sm text-accent mb-2">▶ {{ char.role }}</div>
-          <p class="text-sm text-muted-foreground">{{ char.description }}</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mb-8">
       <h3 class="mb-4 pb-2 border-b-2 border-secondary">🌍 世界観設定紹介ツイート</h3>
-      <div class="space-y-6">
-        <div
-          v-for="tweet in loreTweets"
-          :key="tweet.url"
-          class="border-2 border-secondary bg-card p-4 space-y-3"
-        >
-          <div class="text-xs text-muted-foreground">
-            {{ tweet.date }} / {{ tweet.label }}
+      <div class="space-y-8">
+        <div v-for="tweet in loreTweets" :key="tweet.url" class="border-2 border-secondary bg-card p-4 space-y-3">
+          <div class="flex items-center justify-between text-xs text-muted-foreground">
+            <span>{{ tweet.date }}</span>
+            <span>{{ tweet.label }}</span>
           </div>
-          <blockquote class="twitter-tweet" data-theme="dark">
-            <a :href="tweet.url">{{ tweet.url }}</a>
-          </blockquote>
+            <div class="tweet-embed">
+                <blockquote class="twitter-tweet" data-theme="dark">
+                    <a :href="tweet.url">{{ tweet.url }}</a>
+                </blockquote>
+            </div>
         </div>
       </div>
     </div>
 
+    <!--
     <div class="border-2 border-secondary bg-card p-6">
       <h3 class="mb-4">📅 ストーリータイムライン</h3>
       <div class="space-y-4">
@@ -181,5 +134,19 @@ onMounted(() => {
         💡 この設定資料はアニメ公式設定に基づいています。ネタバレを含む場合がありますのでご注意ください。
       </p>
     </div>
+    -->
   </div>
 </template>
+
+<style scoped>
+.tweet-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.tweet-embed .twitter-tweet,
+.tweet-embed iframe {
+  width: 100% !important;
+  max-width: 600px !important;
+}
+</style>
