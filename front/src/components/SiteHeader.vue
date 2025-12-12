@@ -11,7 +11,7 @@ const mobileMenuOpen = ref(false)
 
 const navItems = [
   { id: 'home', label: 'ホーム' },
-  { id: 'lore', label: '設定資料' },
+  { id: 'worldview', label: '設定資料' },
   { id: 'interviews', label: 'インタビュー' },
   /**{ id: 'goods', label: 'グッズ' },
   { id: 'movies', label: '映画' },
@@ -41,7 +41,7 @@ const handleMobileSelect = (id) => {
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between py-4">
         <h1 class="cursor-pointer hover:text-primary transition-colors" @click="handleSelect('home')">
-          ▶ MILKY FAN SITE
+          ▶ MILKY SERIES UNOFFICIAL FAN SITE
         </h1>
 
         <nav class="hidden md:flex gap-6">
