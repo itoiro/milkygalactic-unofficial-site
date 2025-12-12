@@ -35,12 +35,11 @@ const borderVariants = ['border-primary', 'border-secondary', 'border-accent']
           </span>
         </div>
 
-        <div class="border-l-4 border-accent pl-4 py-2">
-          <p class="text-sm italic">{{ interview.preview }}</p>
+        <div class="text-muted-foreground">
+          <p class="text-sm">{{ interview.preview }}</p>
         </div>
-
         <a
-          class="inline-block mt-4 px-4 py-2 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors"
+          class="interview-link inline-block mt-4 px-4 py-2 border-2 transition-colors"
           :href="interview.link"
           target="_blank"
           rel="noreferrer noopener"
@@ -51,3 +50,15 @@ const borderVariants = ['border-primary', 'border-secondary', 'border-accent']
     </div>
   </div>
 </template>
+
+<style scoped>
+.interview-link {
+  border-color: var(--font-title);
+  color: var(--font-title);
+}
+
+.interview-link:hover {
+  background-color: var(--font-title);
+  color: #0f0f1a;
+}
+</style>
