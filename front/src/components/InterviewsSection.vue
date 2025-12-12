@@ -1,15 +1,7 @@
 <script setup>
 import interviews from '../data/interviews.json'
 
-const orderedInterviews = [...interviews].sort((a, b) => new Date(b.date) - new Date(a.date))
-
-const categoryColors = {
-  'アニメ！アニメ！': 'border-primary',
-  転職type: 'border-secondary',
-  'anan web': 'border-accent',
-  CINRA: 'border-primary',
-  note: 'border-secondary',
-}
+const borderVariants = ['border-primary', 'border-secondary', 'border-accent']
 </script>
 
 <template>
@@ -23,9 +15,12 @@ const categoryColors = {
 
     <div class="grid grid-cols-1 gap-4 mb-6">
       <div
-        v-for="interview in orderedInterviews"
+        v-for="(interview, index) in interviews"
         :key="interview.id"
-        :class="['border-2 bg-card p-6 hover:translate-x-1 transition-transform', categoryColors[interview.category]]"
+        :class="[
+          'border-2 bg-card p-6 hover:translate-x-1 transition-transform',
+          borderVariants[index % borderVariants.length],
+        ]"
       >
         <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
           <div class="flex-1">
@@ -35,7 +30,7 @@ const categoryColors = {
               <span class="text-muted-foreground">📅 {{ interview.date }}</span>
             </div>
           </div>
-          <span class="px-3 py-1 border-2 text-sm whitespace-nowrap" :class="categoryColors[interview.category]">
+          <span class="px-3 py-1 border-2 text-sm whitespace-nowrap" :class="borderVariants[index % borderVariants.length]">
             {{ interview.category }}
           </span>
         </div>
