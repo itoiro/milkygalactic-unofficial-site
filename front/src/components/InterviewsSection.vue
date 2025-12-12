@@ -1,6 +1,8 @@
 <script setup>
 import interviews from '../data/interviews.json'
 
+const orderedInterviews = [...interviews].sort((a, b) => new Date(b.date) - new Date(a.date))
+
 const categoryColors = {
   'アニメ！アニメ！': 'border-primary',
   転職type: 'border-secondary',
@@ -21,7 +23,7 @@ const categoryColors = {
 
     <div class="grid grid-cols-1 gap-4 mb-6">
       <div
-        v-for="interview in interviews"
+        v-for="interview in orderedInterviews"
         :key="interview.id"
         :class="['border-2 bg-card p-6 hover:translate-x-1 transition-transform', categoryColors[interview.category]]"
       >
