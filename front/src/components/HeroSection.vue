@@ -9,22 +9,28 @@ const patternStyle = {
 </script>
 
 <template>
-  <div class="relative border-4 border-primary bg-gradient-to-br from-card to-background p-8 md:p-12 overflow-hidden">
+
+  <div class="px-3 py-1 mb-1" style="display: flex; justify-content: flex-end;">
+    <span class="font-bold" style="color: #ff0000">● REC</span>
+  </div>
+
+  <div class="relative border-4 border-secondary bg-gradient-to-br from-card to-background p-8 md:p-12 overflow-hidden">
+
+
     <div class="absolute inset-0 opacity-10" :style="patternStyle" />
 
+    
     <div class="relative z-10">
-      <div class="inline-block border-2 border-foreground bg-background px-3 py-1 mb-4">
-        <span class="text-primary">● REC</span>
-      </div>
-
+      
       <h1 class="mb-4 text-3xl md:text-5xl">
-        <span class="text-primary">ミルキーシリーズ</span>
-        <span class="text-secondary">非公式</span>
-        <span class="text-accent">ファンサイト</span>
+        <span class="text-font-title">ミルキーシリーズ</span>
+        <span class="text-primary">☆</span>
+        <span class="text-font-title">非公式</span>
+        <span class="text-font-title">ファンサイト</span>
       </h1>
 
-      <p class="max-w-2xl mb-6 text-muted-foreground">
-        ミルキーシリーズ世界観設定など、各種情報をひとまとめ！
+      <p class="max-w-3xl mb-8 text-muted-foreground">
+        銀河特急ミルキー☆サブウェイを中心としたミルキーシリーズ世界観設定など、各種情報をひとまとめ！
       </p>
 
       <!-- <div class="flex flex-wrap gap-3">

@@ -3,7 +3,7 @@ const interviews = [
   {
     id: 1,
     title: '「銀河特急 ミルキー☆サブウェイ」展覧会レポ＆亀山陽平監督インタビュー',
-    interviewer: '亀山陽平（監督）',
+    interviewer: '亀山陽平監督',
     date: '2025.08.07',
     category: 'アニメ！アニメ！',
     preview:
@@ -13,7 +13,7 @@ const interviews = [
   {
     id: 2,
     title: '『銀河特急 ミルキー☆サブウェイ』生みの親・亀山陽平が明かす制作裏',
-    interviewer: '亀山陽平（監督）',
+    interviewer: '亀山陽平監督',
     date: '2025.09.26',
     category: '転職type',
     preview:
@@ -23,7 +23,7 @@ const interviews = [
   {
     id: 3,
     title: '【スペシャルエディション版発売記念！】亀山陽平監督インタビュー',
-    interviewer: '亀山陽平（監督）',
+    interviewer: '亀山陽平監督',
     date: '2025.11.26',
     category: 'anan web',
     preview:
@@ -33,7 +33,7 @@ const interviews = [
   {
     id: 4,
     title: '『ミルキー☆サブウェイ』完結。実制作のほとんどを担当した亀山陽平監督に制作秘話を聞く',
-    interviewer: '亀山陽平（監督）',
+    interviewer: '亀山陽平監督',
     date: '2025.09.22',
     category: 'CINRA',
     preview:
@@ -89,7 +89,7 @@ const categoryColors = {
           target="_blank"
           rel="noreferrer noopener"
         >
-          続きを読む ▶
+          続きを読む(外部リンク) ▶
         </a>
       </div>
     </div>
