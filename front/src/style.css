@@ -1050,10 +1050,18 @@
   }
 
   @media (width >= 64rem) {
-    .lg\:grid-cols-5 {
+.lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
+}
+
+.text-font-primary {
+  color: var(--font-primary);
+}
+
+.text-font-title {
+  color: var(--font-title);
 }
 
 
@@ -1096,6 +1104,9 @@
   --sidebar-accent-foreground: #0f8;
   --sidebar-border: #0f8;
   --sidebar-ring: #0f8;
+
+  --font-primary: #9DFFA8;
+  --font-title: #EEE286;
 }
 
 .dark {

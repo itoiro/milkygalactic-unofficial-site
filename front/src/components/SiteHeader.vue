@@ -41,7 +41,7 @@ const handleMobileSelect = (id) => {
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between py-4">
         <h1 class="cursor-pointer hover:text-primary transition-colors" @click="handleSelect('home')">
-          ▶ MILKY FAN SITE
+          ▶ MILKY SERIES UNOFFICIAL FAN SITE
         </h1>
 
         <nav class="hidden md:flex gap-6">

@@ -148,7 +148,7 @@ const changeSection = (section) => {
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div>
-            <h3 class="mb-3">ミルキーシリーズ非公式ファンサイト</h3>
+            <h3 class="mb-3 text-font-title font-bold">ミルキーシリーズ非公式ファンサイト</h3>
             <!--<p class="text-sm text-muted-foreground">ファンによる、ファンのための情報サイト</p>-->
           </div>
 
