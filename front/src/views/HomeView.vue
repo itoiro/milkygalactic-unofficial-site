@@ -6,7 +6,7 @@ import GoodsSection from '../components/GoodsSection.vue'
 import MoviesSection from '../components/MoviesSection.vue'
 import ComicsSection from '../components/ComicsSection.vue'
 import EventsSection from '../components/EventsSection.vue'
-import LoreSection from '../components/LoreSection.vue'
+import WorldviewSection from '../components/WorldviewSection.vue'
 import DirectorPostsSection from '../components/DirectorPostsSection.vue'
 import CategoryGroupSection from '../components/CategoryGroupSection.vue'
 import InterviewsSection from '../components/InterviewsSection.vue'
@@ -23,7 +23,7 @@ const collectionItems = [
     icon: '📋',
     title: '設定資料集',
     description: '未登場キャラクター、世界観に関する資料',
-    target: 'lore',
+    target: 'worldview',
     variant: 'secondary',
   },
   {
@@ -97,7 +97,7 @@ const mediaItems = [
     <MoviesSection v-else-if="activeSection === 'movies'" />
     <ComicsSection v-else-if="activeSection === 'comics'" />
     <EventsSection v-else-if="activeSection === 'events'" />
-    <LoreSection v-else-if="activeSection === 'lore'" />
+    <WorldviewSection v-else-if="activeSection === 'worldview'" />
     <InterviewsSection v-else-if="activeSection === 'interviews'" />
     <DirectorPostsSection v-else-if="activeSection === 'directorPosts'" />
   </DefaultLayout>
