@@ -45,8 +45,8 @@ const collectionItems = [
 
 const mediaItems = [
   {
-    icon: '📰',
-    title: '監督インタビュー',
+    icon: '🎤',
+    title: 'インタビュー',
     description: 'Web掲載のインタビュー記事をチェックできます。',
     target: 'interviews',
     variant: 'accent',

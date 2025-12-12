@@ -1,29 +1,7 @@
 <script setup>
-import { ref } from 'vue'
+import { useTerminalEgg } from '../lib/useTerminalEgg.js'
 
-const command = ref('')
-const logs = ref([])
-
-const submitCommand = () => {
-  const value = command.value.trim()
-  if (!value) {
-    return
-  }
-  command.value = ''
-  logs.value.push(`> ${value}`)
-
-  if (value.toLowerCase() === 'clear') {
-    logs.value.push('ログをクリアしました。')
-    logs.value = []
-    return
-  }
-
-  logs.value.push(`command not found: ${value}`)
-
-  if (logs.value.length > 20) {
-    logs.value.splice(0, logs.value.length - 20)
-  }
-}
+const { command, logs, submitCommand } = useTerminalEgg()
 </script>
 
 <template>
@@ -54,6 +32,9 @@ const submitCommand = () => {
   font-size: 0.8rem;
   opacity: 0.8;
   min-height: 30px;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  white-space: pre;
 }
 
 .terminal-form {
