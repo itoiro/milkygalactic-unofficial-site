@@ -56,3 +56,20 @@ const handleClick = () => {
     <p class="text-sm">{{ description }}</p>
   </div>
 </template>
+
+<style scoped>
+.custom-hover-accent {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-hover-accent:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.custom-hover-accent:hover h3,
+.custom-hover-accent:hover p,
+.custom-hover-accent:hover span {
+  color: var(--accent-foreground);
+}
+</style>
