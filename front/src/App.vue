@@ -21,7 +21,7 @@ const changeSection = (section) => {
   <div class="min-h-screen bg-background">
     <SiteHeader :active-section="activeSection" @select="changeSection" />
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-2">
       <section v-if="activeSection === 'home'" class="space-y-8">
         <HeroSection />
 
