@@ -69,41 +69,6 @@ const mediaItems = [
       <section v-if="activeSection === 'home'" class="space-y-8">
         <HeroSection />
 
-        <!--<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div
-            class="border-2 border-primary bg-card p-6 cursor-pointer hover:translate-x-1 hover:translate-y-1 transition-transform"
-            @click="changeSection('goods')"
-          >
-            <div class="text-3xl mb-3">🛍️</div>
-            <h3 class="mb-2">最新グッズ</h3>
-            <p class="text-sm text-muted-foreground">
-              フィギュア、Tシャツ、アクリルスタンドなど、公式グッズ情報をチェック
-            </p>
-          </div>
-
-          <div
-            class="border-2 border-secondary bg-card p-6 cursor-pointer hover:translate-x-1 hover:translate-y-1 transition-transform"
-            @click="changeSection('movies')"
-          >
-            <div class="text-3xl mb-3">🎬</div>
-            <h3 class="mb-2">劇場版情報</h3>
-            <p class="text-sm text-muted-foreground">
-              最新作から過去作まで、劇場版の情報と上映館をご案内
-            </p>
-          </div>
-
-          <div
-            class="border-2 border-accent bg-card p-6 cursor-pointer hover:translate-x-1 hover:translate-y-1 transition-transform"
-            @click="changeSection('events')"
-          >
-            <div class="text-3xl mb-3">🎪</div>
-            <h3 class="mb-2">イベント</h3>
-            <p class="text-sm text-muted-foreground">
-              トークショー、コンサート、コラボカフェなど最新イベント情報
-            </p>
-          </div>
-        </div>-->
-
         <CategoryGroupSection
           :items="collectionItems"
           :change-section="changeSection"
@@ -118,13 +83,6 @@ const mediaItems = [
           wrapper-variant="accent"
         />
 
-        <!--<div class="border-4 border-primary bg-gradient-to-r from-primary/10 to-secondary/10 p-6 text-center">
-          <h2 class="mb-3">📢 重要なお知らせ</h2>
-          <p class="mb-4">第2期制作決定！2025年秋放送予定</p>
-          <div class="inline-block border-2 border-primary bg-primary text-primary-foreground px-6 py-2">
-            詳細はこちら ▶
-          </div>
-        </div>-->
       </section>
 
       <GoodsSection v-else-if="activeSection === 'goods'" />
