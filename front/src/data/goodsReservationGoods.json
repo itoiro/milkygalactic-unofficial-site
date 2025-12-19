@@ -85,6 +85,23 @@
     ]
   },
   {
+    "title": "カードサプライ",
+    "brand": "ブシロード",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "2026-02-20",
+        "summary": "トレカスリーブ、デッキケース、ラバーマット",
+        "note": "",
+        "url": "",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "RED° TOKYO TOWER イベントグッズ",
     "brand": "Collection.jc",
     "variants": [
