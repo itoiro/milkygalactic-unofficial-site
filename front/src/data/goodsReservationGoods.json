@@ -85,6 +85,23 @@
     ]
   },
   {
+    "title": "トレーディングカード ",
+    "brand": "ブシロード",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "2026-02-13",
+        "summary": "ブシロード トレーディングカード コレクションクリア",
+        "note": "",
+        "url": "https://x.com/bushi_PR/status/1988773808644223319?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "カードサプライ",
     "brand": "ブシロード",
     "variants": [
@@ -114,23 +131,6 @@
         "summary": "ヒョーゴノスケさんイラストのグッズ。",
         "note": "予約終了日未定",
         "url": "https://collectionjc.com/collections/milky-subway25?srsltid=AfmBOooyZ07mchX3Mgq-Ogic-pofZ2GGV45ygfx8dKoHXoQRH7qCCpd1",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
-    "title": "トレーディングカード ",
-    "brand": "ブシロード",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "",
-        "reserveTo": "",
-        "expiresAt": "",
-        "releaseDate": "2026.02.13",
-        "summary": "ブシロード トレーディングカード コレクションクリア",
-        "note": "",
-        "url": "https://x.com/bushi_PR/status/1988773808644223319?s=20",
         "variation": "通常"
       }
     ]
