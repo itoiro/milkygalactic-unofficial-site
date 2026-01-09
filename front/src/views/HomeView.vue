@@ -8,6 +8,7 @@ import EventsSection from '../components/EventsSection.vue'
 import WorldviewSection from '../components/WorldviewSection.vue'
 import DirectorPostsSection from '../components/DirectorPostsSection.vue'
 import CategoryGroupSection from '../components/CategoryGroupSection.vue'
+import EventInfoSection from '../components/EventInfoSection.vue'
 import GoodsReservationSection from '../components/GoodsReservationSection.vue'
 import InterviewsSection from '../components/InterviewsSection.vue'
 import MagazinesSection from '../components/MagazinesSection.vue'
@@ -78,6 +79,15 @@ const mediaItems = [
         <div class="mt-6">
           <GoodsReservationSection />
         </div>
+      </CategoryGroupSection>
+
+      <CategoryGroupSection
+        :items="[]"
+        :change-section="changeSection"
+        title="🌟 イベント情報"
+        wrapper-variant="accent"
+      >
+        <EventInfoSection />
       </CategoryGroupSection>
 
       <CategoryGroupSection
