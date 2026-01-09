@@ -1,22 +1,5 @@
 [
   {
-    "title": "バンコレ！グッズ第一弾",
-    "brand": "プレミアムバンダイ",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "2025-11-26",
-        "reserveTo": "2026-01-04",
-        "expiresAt": "2026-01-04",
-        "releaseDate": "",
-        "summary": "ヘアゴム、トート、ネームバッジ、アクリルチャーム、タオル、Tシャツ ほか",
-        "note": "",
-        "url": "https://p-bn.jp/su/0640ebik21al/",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
     "title": "マンガ展ストア",
     "brand": "マンガ展",
     "variants": [
@@ -46,6 +29,23 @@
         "summary": "くつした、クリスマスオーナメント ほか",
         "note": "",
         "url": "https://shop.imthree.net/view/category/ct12",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "KUROBOSHICHURROS コラボ",
+    "brand": "KUROBOSHICHURROS",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026-01-09",
+        "reserveTo": "2026-02-08",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "缶バッジ、証明写真風シール、ネームプレート",
+        "note": "予約〆は特典受注期間。通販サイトで3300円以上購入ごとに特典ミニカードプレゼント（ランダム全8種）",
+        "url": "https://rencontre-ip.store/blogs/news/2026-01-09-milkygalacticuniverse",
         "variation": "通常"
       }
     ]
