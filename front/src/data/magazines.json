@@ -1,5 +1,16 @@
 [
-    {
+  {
+    "id": 15,
+    "magazine": "アニメージュ",
+    "title": "アニメージュ 2月号",
+    "date": "2026.01.09",
+    "description": "",
+    "appendix": "",
+    "link": "",
+    "jan-code": "",
+    "isbn-13": ""
+  },
+  {
     "id": 14,
     "magazine": "PASH!",
     "title": "PASH! 3月号",
