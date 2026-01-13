@@ -67,27 +67,6 @@ const mediaItems = [
       <HeroSection />
 
       <CategoryGroupSection
-        :items="[]"
-        :change-section="changeSection"
-        title="🎈 商品情報"
-        wrapper-variant="accent"
-      >
-        <!-- <GoodsSection /> -->
-        <div class="mt-6">
-          <GoodsReservationSection />
-        </div>
-      </CategoryGroupSection>
-
-      <CategoryGroupSection
-        :items="[]"
-        :change-section="changeSection"
-        title="🌟 イベント情報"
-        wrapper-variant="accent"
-      >
-        <EventInfoSection />
-      </CategoryGroupSection>
-
-      <CategoryGroupSection
         :items="collectionItems"
         :change-section="changeSection"
         title="📚 設定資料集"
@@ -100,6 +79,28 @@ const mediaItems = [
         title="📺 メディア情報"
         wrapper-variant="accent"
       />
+
+      <CategoryGroupSection
+        :items="[]"
+        :change-section="changeSection"
+        title="🌟 イベント情報"
+        wrapper-variant="accent"
+      >
+        <EventInfoSection />
+      </CategoryGroupSection>
+
+      <CategoryGroupSection
+        :items="[]"
+        :change-section="changeSection"
+        title="🎈 商品情報"
+        wrapper-variant="accent"
+        title-class="title-foreground"
+      >
+        <!-- <GoodsSection /> -->
+        <div class="mt-6">
+          <GoodsReservationSection />
+        </div>
+      </CategoryGroupSection>
 
       <CategoryGroupSection
         :items="[]"

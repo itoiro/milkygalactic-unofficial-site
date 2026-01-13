@@ -2,6 +2,7 @@
 import goodsReservationGoods from '../data/goodsReservationGoods.json'
 import goodsReservationMedia from '../data/goodsReservationMedia.json'
 import priseInfo from '../data/priseInfo.json'
+import DetailLinkButton from './DetailLinkButton.vue'
 
 const parseDateMs = (value) => {
   const t = new Date(value || '').getTime()
@@ -41,10 +42,10 @@ const sections = [
     <div class="space-y-6">
       <div class="mt-6" v-for="section in sections" :key="section.key">
         <div class="flex items-center gap-2 mb-2">
-          <div class="w-8 h-8 bg-accent border-2 border-foreground flex items-center justify-center">
+          <div class="w-8 h-8 bg-accent flex items-center justify-center">
             ⏱
           </div>
-          <h3 class="text-lg md:text-xl font-semibold">{{ section.title }}</h3>
+          <h3 class="text-lg md:text-xl font-semibold reservation-title">{{ section.title }}</h3>
           <span v-if="!section.groups.length" class="text-xs text-muted-foreground">現在ありません</span>
         </div>
 
@@ -80,15 +81,11 @@ const sections = [
                     </div>
                   </div>
                   <div class="pt-1">
-                    <a
+                    <DetailLinkButton
                       v-if="group.variants[0].url"
-                      class="reservation-link w-full justify-center"
                       :href="group.variants[0].url"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      <span>詳細リンク</span>
-                    </a>
+                      :full-width="true"
+                    />
                     <span v-else class="reservation-placeholder">—</span>
                   </div>
                 </div>
@@ -123,15 +120,7 @@ const sections = [
                       </div>
                     </div>
                     <div class="pt-2">
-                      <a
-                        v-if="variant.url"
-                        class="reservation-link w-full justify-center"
-                        :href="variant.url"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <span>詳細リンク</span>
-                      </a>
+                      <DetailLinkButton v-if="variant.url" :href="variant.url" :full-width="true" />
                       <span v-else class="reservation-placeholder">—</span>
                     </div>
                   </div>
@@ -171,15 +160,7 @@ const sections = [
                       </div>
                     </td>
                     <td class="py-2 px-3 whitespace-nowrap">
-                      <a
-                        v-if="group.variants[0].url"
-                        class="reservation-link"
-                        :href="group.variants[0].url"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <span>詳細リンク</span>
-                      </a>
+                      <DetailLinkButton v-if="group.variants[0].url" :href="group.variants[0].url" />
                       <span v-else class="reservation-placeholder">—</span>
                     </td>
                   </tr>
@@ -210,15 +191,7 @@ const sections = [
                       </div>
                     </td>
                     <td class="py-2 px-3 whitespace-nowrap">
-                      <a
-                        v-if="variant.url"
-                        class="reservation-link"
-                        :href="variant.url"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        <span>詳細リンク</span>
-                      </a>
+                      <DetailLinkButton v-if="variant.url" :href="variant.url" />
                       <span v-else class="reservation-placeholder">—</span>
                     </td>
                   </tr>
@@ -234,32 +207,12 @@ const sections = [
 </template>
 
 <style scoped>
-.reservation-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  border-radius: 9999px;
-  border: 1px solid rgba(15, 255, 136, 0.45);
-  background: rgba(26, 26, 46, 0.9);
-  color: inherit;
-  font-size: 0.8rem;
-  transition: color 120ms ease, border-color 120ms ease, background-color 120ms ease;
-  white-space: nowrap;
+.reservation-section th {
+  color: var(--foreground) !important;
 }
 
-.reservation-link:hover {
-  color: var(--primary);
-  border-color: var(--primary);
-  background: rgba(255, 0, 110, 0.12);
-}
-
-.reservation-link span:first-of-type {
-  font-size: 0.9rem;
-}
-
-.reservation-link {
-  border-radius: 9999px;
+.reservation-title {
+  color: var(--foreground);
 }
 
 .group-row {
