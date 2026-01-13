@@ -11,6 +11,7 @@ import InterviewsSection from '../components/InterviewsSection.vue'
 import MagazinesSection from '../components/MagazinesSection.vue'
 import CalendarEmbedSection from '../components/CalendarEmbedSection.vue'
 import TerminalConsole from '../components/TerminalConsole.vue'
+import SectionSeparator from '../components/SectionSeparator.vue'
 
 const activeSection = ref('home')
 const changeSection = (section) => {
@@ -66,6 +67,7 @@ const mediaItems = [
     <section v-if="activeSection === 'home'" class="space-y-8">
       <HeroSection />
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="collectionItems"
         :change-section="changeSection"
@@ -73,6 +75,7 @@ const mediaItems = [
         wrapper-variant="foreground"
       />
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="mediaItems"
         :change-section="changeSection"
@@ -80,6 +83,7 @@ const mediaItems = [
         wrapper-variant="accent"
       />
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
         :change-section="changeSection"
@@ -89,6 +93,7 @@ const mediaItems = [
         <EventInfoSection />
       </CategoryGroupSection>
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
         :change-section="changeSection"
@@ -102,6 +107,7 @@ const mediaItems = [
         </div>
       </CategoryGroupSection>
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
         :change-section="changeSection"
