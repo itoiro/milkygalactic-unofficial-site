@@ -54,11 +54,11 @@ const sections = [
             <div
               v-for="group in section.groups"
               :key="`mobile-${group.title}`"
-              class="border border-foreground/50 bg-card/80 p-2 space-y-3 text-sm"
+              class="mobile-group-card border border-foreground/50 bg-card/80 p-2 space-y-3 text-sm"
             >
               <div class="flex items-start justify-between gap-2">
                 <div>
-                  <div class="font-semibold text-base">{{ group.title }}</div>
+                  <div class="font-semibold text-base group-title">{{ group.title }}</div>
                   <div v-if="group.brand" class="text-xs text-muted-foreground mt-1">{{ group.brand }}</div>
                 </div>
               </div>
@@ -102,7 +102,9 @@ const sections = [
                       <span class="flag-label">バリエーション</span>
                     </div>
                     <div class="text-sm">
-                      <div class="font-semibold text-base mb-1">{{ variant.variation || variant.label || '通常' }}</div>
+                      <div class="font-semibold text-base mb-1 group-title">
+                        {{ variant.variation || variant.label || '通常' }}
+                      </div>
                       <div v-if="section.key !== 'prize' && variant.reserveTo" class="flex items-start gap-2">
                         <span class="label-text">予約〆</span>
                         <span class="value-text date-inline">{{ variant.reserveTo || '—' }}</span>
@@ -213,6 +215,22 @@ const sections = [
 
 .reservation-title {
   color: var(--foreground);
+}
+
+.group-title {
+  color: var(--foreground);
+}
+
+.mobile-group-card + .mobile-group-card {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.variant-card + .variant-card {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .group-row {
