@@ -11,6 +11,7 @@ import InterviewsSection from '../components/InterviewsSection.vue'
 import MagazinesSection from '../components/MagazinesSection.vue'
 import CalendarEmbedSection from '../components/CalendarEmbedSection.vue'
 import TerminalConsole from '../components/TerminalConsole.vue'
+import SectionSeparator from '../components/SectionSeparator.vue'
 
 const activeSection = ref('home')
 const changeSection = (section) => {
@@ -66,18 +67,23 @@ const mediaItems = [
     <section v-if="activeSection === 'home'" class="space-y-8">
       <HeroSection />
 
+      <SectionSeparator />
       <CategoryGroupSection
-        :items="[]"
+        :items="collectionItems"
         :change-section="changeSection"
-        title="🎈 商品情報"
-        wrapper-variant="accent"
-      >
-        <!-- <GoodsSection /> -->
-        <div class="mt-6">
-          <GoodsReservationSection />
-        </div>
-      </CategoryGroupSection>
+        title="📚 設定資料集"
+        wrapper-variant="foreground"
+      />
 
+      <SectionSeparator />
+      <CategoryGroupSection
+        :items="mediaItems"
+        :change-section="changeSection"
+        title="📺 メディア情報"
+        wrapper-variant="accent"
+      />
+
+      <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
         :change-section="changeSection"
@@ -87,20 +93,21 @@ const mediaItems = [
         <EventInfoSection />
       </CategoryGroupSection>
 
+      <SectionSeparator />
       <CategoryGroupSection
-        :items="collectionItems"
+        :items="[]"
         :change-section="changeSection"
-        title="📚 設定資料集"
-        wrapper-variant="foreground"
-      />
-
-      <CategoryGroupSection
-        :items="mediaItems"
-        :change-section="changeSection"
-        title="📺 メディア情報"
+        title="🎈 商品情報"
         wrapper-variant="accent"
-      />
+        title-class="title-foreground"
+      >
+        <!-- <GoodsSection /> -->
+        <div class="mt-6">
+          <GoodsReservationSection />
+        </div>
+      </CategoryGroupSection>
 
+      <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
         :change-section="changeSection"
