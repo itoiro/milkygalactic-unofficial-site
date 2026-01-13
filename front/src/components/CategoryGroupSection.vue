@@ -6,6 +6,10 @@ const props = defineProps({
     type: String,
     default: '📚 設定資料集',
   },
+  titleClass: {
+    type: String,
+    default: '',
+  },
   items: {
     type: Array,
     default: () => [],
@@ -22,10 +26,10 @@ const props = defineProps({
 })
 
 const wrapperVariantClasses = {
-  foreground: 'border-foreground',
-  primary: 'border-primary',
-  secondary: 'border-secondary',
-  accent: 'border-accent',
+  foreground: 'border-t-2 border-foreground',
+  primary: 'border-t-2 border-foreground',
+  secondary: 'border-t-2 border-foreground',
+  accent: 'border-t-2 border-foreground',
 }
 
 const handleCardSelect = (item) => {
@@ -37,8 +41,8 @@ const handleCardSelect = (item) => {
 </script>
 
 <template>
-  <div class="border-2 bg-card p-6" :class="wrapperVariantClasses[wrapperVariant]">
-    <h2 class="mb-4 text-2xl md:text-3xl font-semibold">{{ title }}</h2>
+  <div class="section-shell bg-card p-6 mt-4" :class="wrapperVariantClasses[wrapperVariant]">
+    <h2 class="mb-4 text-2xl md:text-3xl font-semibold section-title" :class="titleClass">{{ title }}</h2>
     <div v-if="items.length" class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <CategoryGroupCard
         v-for="item in items"
@@ -54,3 +58,21 @@ const handleCardSelect = (item) => {
     <slot />
   </div>
 </template>
+
+<style scoped>
+.section-title {
+  color: var(--font-title);
+}
+
+.section-shell {
+  color: #fff;
+}
+
+.title-foreground {
+  color: var(--foreground);
+}
+
+:deep(th) {
+  color: var(--foreground) !important;
+}
+</style>

@@ -94,6 +94,7 @@ const mediaItems = [
         :change-section="changeSection"
         title="🎈 商品情報"
         wrapper-variant="accent"
+        title-class="title-foreground"
       >
         <!-- <GoodsSection /> -->
         <div class="mt-6">
