@@ -5,9 +5,9 @@
     "variants": [
       {
         "label": "通常",
-        "reserveFrom": "2025-11-07",
-        "reserveTo": "2026-01-12",
-        "expiresAt": "2026-01-12",
+        "reserveFrom": "2025/11/07",
+        "reserveTo": "2026/01/12",
+        "expiresAt": "2026/01/12",
         "releaseDate": "",
         "summary": "キービジュアルアクスタ、マグショットブロマイド、衣装モチーフアクキー ほか",
         "note": "ポップアップストアにて店頭販売しているグッズ。予約〆は通販終了日。",
@@ -22,9 +22,9 @@
     "variants": [
       {
         "label": "通常",
-        "reserveFrom": "2025-11-13",
-        "reserveTo": "2026-01-13",
-        "expiresAt": "2026-01-13",
+        "reserveFrom": "2025/11/13",
+        "reserveTo": "2026/01/13",
+        "expiresAt": "2026/01/13",
         "releaseDate": "",
         "summary": "くつした、クリスマスオーナメント ほか",
         "note": "",
@@ -39,13 +39,30 @@
     "variants": [
       {
         "label": "通常",
-        "reserveFrom": "2026-01-09",
-        "reserveTo": "2026-02-08",
+        "reserveFrom": "2026/01/09",
+        "reserveTo": "2026/02/08",
         "expiresAt": "",
         "releaseDate": "",
         "summary": "缶バッジ、証明写真風シール、ネームプレート",
         "note": "予約〆は特典受注期間。通販サイトで3300円以上購入ごとに特典ミニカードプレゼント（ランダム全8種）",
         "url": "https://rencontre-ip.store/blogs/news/2026-01-09-milkygalacticuniverse",
+        "variation": "通常"
+      }
+    ]
+  },
+    {
+    "title": "一番くじちょこっと",
+    "brand": "BANDAI",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/02/06",
+        "releaseDate": "2026/02/06",
+        "summary": "アクスタ、アクリルバッジ、ウラオモチャームほか",
+        "note": "オンライン販売：2026年02月06日(金)17:00より販売開始予定",
+        "url": "https://1kuji.com/products/milkygalacticuniverse",
         "variation": "通常"
       }
     ]
@@ -73,7 +90,7 @@
     "variants": [
       {
         "label": "",
-        "reserveFrom": "2025.12.22",
+        "reserveFrom": "2025/12/22",
         "reserveTo": "-",
         "expiresAt": "",
         "releaseDate": "2026年2月発売予定",
@@ -93,7 +110,7 @@
         "reserveFrom": "",
         "reserveTo": "",
         "expiresAt": "",
-        "releaseDate": "2026-02-13",
+        "releaseDate": "2026/02/13",
         "summary": "ブシロード トレーディングカード コレクションクリア",
         "note": "",
         "url": "https://x.com/bushi_PR/status/1988773808644223319?s=20",
@@ -110,7 +127,7 @@
         "reserveFrom": "",
         "reserveTo": "",
         "expiresAt": "",
-        "releaseDate": "2026-02-20",
+        "releaseDate": "2026/02/20",
         "summary": "トレカスリーブ、デッキケース、ラバーマット",
         "note": "",
         "url": "",
@@ -124,7 +141,7 @@
     "variants": [
       {
         "label": "",
-        "reserveFrom": "2025.12.22",
+        "reserveFrom": "2025/12/22",
         "reserveTo": "-",
         "expiresAt": "-",
         "releaseDate": "2026年3月発売予定",
@@ -141,7 +158,7 @@
     "variants": [
       {
         "label": "通常",
-        "reserveFrom": "2025-10-17",
+        "reserveFrom": "2025/10/17",
         "reserveTo": "",
         "expiresAt": "",
         "releaseDate": "",
