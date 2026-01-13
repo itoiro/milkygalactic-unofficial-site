@@ -26,10 +26,10 @@ const props = defineProps({
 })
 
 const wrapperVariantClasses = {
-  foreground: 'border-t-2 border-foreground',
-  primary: 'border-t-2 border-foreground',
-  secondary: 'border-t-2 border-foreground',
-  accent: 'border-t-2 border-foreground',
+  foreground: '',
+  primary: '',
+  secondary: '',
+  accent: '',
 }
 
 const handleCardSelect = (item) => {
