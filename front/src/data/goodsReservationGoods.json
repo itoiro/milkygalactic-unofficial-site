@@ -187,6 +187,23 @@
     ]
   },
   {
+    "title": "FUNDOMグッズ",
+    "brand": "FUNDOM",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "-",
+        "expiresAt": "2026/02/28",
+        "releaseDate": "2月中旬発売予定",
+        "summary": "新規描き起こしグッズやフィンガーマスコットなど",
+        "note": "",
+        "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "ポーチコレクション",
     "brand": "SKカプセルトイ",
     "variants": [
