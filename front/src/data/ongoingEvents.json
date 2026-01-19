@@ -1,12 +1,5 @@
 [
   {
-    "name": "マンガ展天王寺",
-    "startDate": "2025/12/19",
-    "endDate": "2026/01/12",
-    "location": "大阪",
-    "url": "https://www.manga10.com/event/3636"
-  },
-  {
     "name": "ZeroBase渋谷・ ORBcafeコラボ",
     "startDate": "2026/01/14",
     "endDate": "2026/02/01",
@@ -28,17 +21,24 @@
     "url": "https://rencontre-ip.store/blogs/news/2026-01-09-milkygalacticuniverse"
   },
   {
+    "name": "さっぽろ雪まつり",
+    "startDate": "2026/02/04",
+    "endDate": "2026/02/11",
+    "location": "北海道",
+    "url": "https://snowfes2026-milkysubway.com/"
+  },
+  {
     "name": "道頓堀コラボ",
     "startDate": "2026/02/06",
-    "endDate": "2026/03/80",
-    "location": "",
+    "endDate": "2026/03/08",
+    "location": "リンク先参照",
     "url": "https://dohtonbori.com/campaign/milky-movie/"
   },
   {
     "name": "アニメイトフェア",
     "startDate": "2026/02/07",
     "endDate": "2026/03/01",
-    "location": "",
+    "location": "リンク先参照",
     "url": "https://www.animate-onlineshop.jp/contents/fair_event/detail.php?id=114264&srsltid=AfmBOorOeSDpA8Tfas5iiJA8lHkfBr-gLHEsJ5rXUfWs7FJjywGelKNk"
   }
 ]

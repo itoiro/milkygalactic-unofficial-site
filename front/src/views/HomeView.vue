@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import DefaultLayout from '../layouts/DefaultLayout.vue'
 import HeroSection from '../components/HeroSection.vue'
 import WorldviewSection from '../components/WorldviewSection.vue'
@@ -13,9 +12,17 @@ import CalendarEmbedSection from '../components/CalendarEmbedSection.vue'
 import TerminalConsole from '../components/TerminalConsole.vue'
 import SectionSeparator from '../components/SectionSeparator.vue'
 
-const activeSection = ref('home')
+const props = defineProps({
+  activeSection: {
+    type: String,
+    default: 'home',
+  },
+})
+
+const emit = defineEmits(['selectSection'])
+
 const changeSection = (section) => {
-  activeSection.value = section
+  emit('selectSection', section)
 }
 
 const collectionItems = [
@@ -66,6 +73,11 @@ const mediaItems = [
   <DefaultLayout :active-section="activeSection" @select="changeSection">
     <section v-if="activeSection === 'home'" class="space-y-8">
       <HeroSection />
+
+      <button class="feature-banner feature-banner--clickable" type="button" @click="changeSection('movie')">
+        <span class="feature-label">劇場版特集</span>
+        <span class="feature-subtext">★特典やグッズ情報はこちら★</span>
+      </button>
 
       <SectionSeparator />
       <CategoryGroupSection
@@ -120,13 +132,52 @@ const mediaItems = [
       <TerminalConsole />
     </section>
 
-    <GoodsSection v-else-if="activeSection === 'goods'" />
-    <MoviesSection v-else-if="activeSection === 'movies'" />
-    <ComicsSection v-else-if="activeSection === 'comics'" />
-    <EventsSection v-else-if="activeSection === 'events'" />
     <WorldviewSection v-else-if="activeSection === 'worldview'" />
     <InterviewsSection v-else-if="activeSection === 'interviews'" />
     <MagazinesSection v-else-if="activeSection === 'magazines'" />
     <DirectorPostsSection v-else-if="activeSection === 'directorPosts'" />
   </DefaultLayout>
 </template>
+
+<style scoped>
+.feature-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--foreground);
+  background: rgba(15, 255, 136, 0.08);
+  color: var(--foreground);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  width: 100%;
+  max-width: 100%;
+}
+
+.feature-label {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.feature-subtext {
+  font-size: 0.9rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  color: var(--font-title);
+}
+
+.feature-banner--clickable {
+  cursor: pointer;
+}
+
+.feature-banner--clickable:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+</style>
