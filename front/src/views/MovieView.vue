@@ -43,8 +43,7 @@ const links = [
         <h2 class="movie-hero__title">銀河特急 ミルキー★サブウェイ 各駅停車劇場行き</h2>
         <h2 class="movie-hero__title">2月6日(金) 公開！</h2>
         <div class="movie-hero__copy marquee">
-          <span class="marquee__text">銀河の底辺、劇場に再集合！暴走列車を食いとめろ！</span>
-          <span class="marquee__text marquee__text--offset">。*° 。*:゜銀河の底辺、劇場に再集合！暴走列車を食いとめろ！。*° 。*:゜</span>
+          <span class="marquee__text">。*° 。*:゜銀河の底辺、劇場に再集合！暴走列車を食いとめろ！。*° 。*:゜</span>
         </div>
       </div>
 
@@ -165,11 +164,9 @@ const links = [
 .marquee__text {
   white-space: nowrap;
   display: inline-block;
-  animation: marquee-rtl 16s steps(60) infinite;
-}
-
-.marquee__text--offset {
-  animation-delay: -8s;
+  min-width: 100%;
+  padding-right: 3rem;
+  animation: marquee-rtl 18s steps(80) infinite;
 }
 
 @keyframes marquee-rtl {
