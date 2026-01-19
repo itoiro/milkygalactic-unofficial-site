@@ -34,13 +34,47 @@
     ]
   },
   {
+    "title": "さっぽろ雪まつりグッズ",
+    "brand": "プラリーモール",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "雪まつりのために描き起こされたイラストを使用したグッズ",
+        "note": "予約期間等不明",
+        "url": "https://snowfes2026-milkysubway.com/",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "ぬいぐるみ マキナ/チハル",
+    "brand": "グッドスマイルカンパニー",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "2026/01/19",
+        "reserveTo": "2026/02/18",
+        "expiresAt": "2026/07/15",
+        "releaseDate": "2026年07月発送予定",
+        "summary": "マキナとチハルのぬいぐるみ",
+        "note": "2026年07月発送予定",
+        "url": "https://www.goodsmile.com/ja/product/1141272/%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF+%E3%83%9E%E3%82%AD%E3%83%8A+%E3%83%81%E3%83%8F%E3%83%AB",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "KUROBOSHICHURROS コラボ",
     "brand": "KUROBOSHICHURROS",
     "variants": [
       {
         "label": "通常",
         "reserveFrom": "2026/01/09",
-        "reserveTo": "2026/02/08",
+        "reserveTo": "2026/02/28",
         "expiresAt": "",
         "releaseDate": "",
         "summary": "缶バッジ、証明写真風シール、ネームプレート",
@@ -148,6 +182,40 @@
         "summary": "オーロラ缶バッジ、アクスタ―、アクキー、クリアカード",
         "note": "アクスタセットの購入で、缶バッジ特典あり。セット予約締め切りは2026/1/13中。",
         "url": "https://www.animate-onlineshop.jp/corner/cc/milkygalacticuniverse-1222goods/cd/4040/",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "FUNDOMグッズ",
+    "brand": "FUNDOM",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "-",
+        "expiresAt": "2026/02/28",
+        "releaseDate": "2月中旬発売予定",
+        "summary": "新規描き起こしグッズやフィンガーマスコットなど",
+        "note": "",
+        "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "ポーチコレクション",
+    "brand": "SKカプセルトイ",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "-",
+        "expiresAt": "2026/07/15",
+        "releaseDate": "2026年初夏頃発売予定",
+        "summary": "ビッグサイズのポーチ",
+        "note": "カプセルトイ",
+        "url": "https://x.com/skcapsuletoy/status/2013068896308457759?s=20",
         "variation": "通常"
       }
     ]

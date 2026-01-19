@@ -11,6 +11,7 @@ const mobileMenuOpen = ref(false)
 
 const navItems = [
   { id: 'home', label: 'ホーム' },
+  { id: 'movie', label: '劇場版' },
   { id: 'worldview', label: '設定資料' },
   { id: 'interviews', label: 'インタビュー' },
   { id: 'magazines', label: '掲載誌' },
