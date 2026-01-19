@@ -1,5 +1,6 @@
 <script setup>
 import ongoingEvents from '../data/ongoingEvents.json'
+import DetailLinkButton from './DetailLinkButton.vue'
 </script>
 
 <template>
@@ -22,16 +23,7 @@ import ongoingEvents from '../data/ongoingEvents.json'
             <span class="value-text">{{ event.startDate }} - {{ event.endDate }}</span>
           </div>
           <div class="pt-2">
-            <a
-              v-if="event.url"
-              class="reservation-link inline-flex items-center gap-2 w-full justify-center"
-              :href="event.url"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span>詳細リンク</span>
-              <span aria-hidden="true">↗</span>
-            </a>
+            <DetailLinkButton v-if="event.url" :href="event.url" :full-width="true" />
             <span v-else class="text-muted-foreground text-sm">—</span>
           </div>
         </div>
@@ -64,16 +56,7 @@ import ongoingEvents from '../data/ongoingEvents.json'
                 </div>
               </td>
               <td class="py-4 px-3">
-                <a
-                  v-if="event.url"
-                  class="reservation-link inline-flex items-center gap-2"
-                  :href="event.url"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <span>詳細リンク</span>
-                  <span aria-hidden="true">↗</span>
-                </a>
+                <DetailLinkButton v-if="event.url" :href="event.url" />
                 <span v-else class="text-muted-foreground">—</span>
               </td>
             </tr>
@@ -85,23 +68,6 @@ import ongoingEvents from '../data/ongoingEvents.json'
 </template>
 
 <style scoped>
-.reservation-link {
-  padding: 9px 14px;
-  border-radius: 9999px;
-  border: 1px solid rgba(15, 255, 136, 0.45);
-  background: rgba(26, 26, 46, 0.9);
-  color: inherit;
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  transition: color 120ms ease, border-color 120ms ease, background-color 120ms ease;
-}
-
-.reservation-link:hover {
-  color: var(--primary);
-  border-color: var(--primary);
-  background: rgba(255, 0, 110, 0.12);
-}
-
 .event-card {
   border: none;
   border-radius: 0;

@@ -51,7 +51,7 @@ const handleClick = () => {
   >
     <div class="flex items-center gap-3 mb-2">
       <span class="text-2xl">{{ icon }}</span>
-      <h3>{{ title }}</h3>
+      <h3 class="card-title">{{ title }}</h3>
     </div>
     <p class="text-sm">{{ description }}</p>
   </div>
@@ -71,5 +71,9 @@ const handleClick = () => {
 .custom-hover-accent:hover p,
 .custom-hover-accent:hover span {
   color: var(--accent-foreground);
+}
+
+.card-title {
+  color: var(--foreground);
 }
 </style>
