@@ -45,7 +45,7 @@ import DetailLinkButton from './DetailLinkButton.vue'
               :key="event.name"
               class="border-b border-foreground/30 last:border-0"
             >
-              <td class="py-4 px-3 font-semibold whitespace-nowrap">{{ event.name }}</td>
+              <td class="py-4 px-3 font-semibold event-name">{{ event.name }}</td>
               <td class="py-4 px-3 whitespace-nowrap">
                 <div>{{ event.startDate }} - {{ event.endDate }}</div>
               </td>
@@ -86,6 +86,12 @@ import DetailLinkButton from './DetailLinkButton.vue'
 
 .event-table :deep(tbody tr:hover) {
   background: rgba(15, 255, 136, 0.12);
+}
+
+.event-name {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .mobile-only {

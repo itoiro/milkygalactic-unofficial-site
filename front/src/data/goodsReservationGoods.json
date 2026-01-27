@@ -34,18 +34,18 @@
     ]
   },
   {
-    "title": "さっぽろ雪まつりグッズ",
-    "brand": "プラリーモール",
+    "title": "バンコレ第二弾",
+    "brand": "プレミアムバンダイ",
     "variants": [
       {
-        "label": "",
-        "reserveFrom": "",
-        "reserveTo": "",
-        "expiresAt": "",
+        "label": "通常",
+        "reserveFrom": "2026/01/22",
+        "reserveTo": "2026/02/08",
+        "expiresAt": "2026/02/08",
         "releaseDate": "",
-        "summary": "雪まつりのために描き起こされたイラストを使用したグッズ",
-        "note": "予約期間等不明",
-        "url": "https://snowfes2026-milkysubway.com/",
+        "summary": "アクスタなど",
+        "note": "",
+        "url": "https://p-bandai.jp/fashion/c0007/c0007024/?utm_source=%8A%D6%98A%83T%83C%83g&utm_medium=%83A%83p%83%8C%83%8B%8E%96%8B%C6%95%94&utm_campain=%81y%83%7E%83%8B%83L%81%5B%83T%83u%83E%83F%83C%81z%8C%F6%8E%AE",
         "variation": "通常"
       }
     ]
@@ -84,19 +84,19 @@
       }
     ]
   },
-    {
-    "title": "一番くじちょこっと",
-    "brand": "BANDAI",
+  {
+    "title": "キャラクターフレグランス",
+    "brand": "primaniacs",
     "variants": [
       {
         "label": "通常",
-        "reserveFrom": "",
-        "reserveTo": "",
-        "expiresAt": "2026/02/06",
-        "releaseDate": "2026/02/06",
-        "summary": "アクスタ、アクリルバッジ、ウラオモチャームほか",
-        "note": "オンライン販売：2026年02月06日(金)17:00より販売開始予定",
-        "url": "https://1kuji.com/products/milkygalacticuniverse",
+        "reserveFrom": "2026/01/27",
+        "reserveTo": "2026/02/28※",
+        "expiresAt": "2026/04/23",
+        "releaseDate": "2026/04/23",
+        "summary": "マキナ、チハル、カート、マックスのキャラクターフレグランス",
+        "note": "※通販での特典は2/28まで。店頭販売あり。",
+        "url": "https://primaniacs.com/milkysubway/index.html",
         "variation": "通常"
       }
     ]
@@ -136,6 +136,23 @@
     ]
   },
   {
+    "title": "一番くじちょこっと",
+    "brand": "BANDAI",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/02/06",
+        "releaseDate": "2026/02/06",
+        "summary": "アクスタ、アクリルバッジ、ウラオモチャームほか",
+        "note": "オンライン販売：2026年02月06日(金)17:00より販売開始予定",
+        "url": "https://1kuji.com/products/milkygalacticuniverse",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "トレーディングカード ",
     "brand": "ブシロード",
     "variants": [
@@ -170,6 +187,23 @@
     ]
   },
   {
+    "title": "FUNDOMグッズ",
+    "brand": "FUNDOM",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "-",
+        "expiresAt": "2026/02/28",
+        "releaseDate": "2月中旬発売予定",
+        "summary": "新規描き起こしグッズやフィンガーマスコットなど",
+        "note": "",
+        "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "カミオジャパンオリジナル描き起こし",
     "brand": "カミオジャパン",
     "variants": [
@@ -187,18 +221,18 @@
     ]
   },
   {
-    "title": "FUNDOMグッズ",
-    "brand": "FUNDOM",
+    "title": "ベルハウス",
+    "brand": "ベルハウス",
     "variants": [
       {
-        "label": "",
+        "label": "通常",
         "reserveFrom": "",
-        "reserveTo": "-",
-        "expiresAt": "2026/02/28",
-        "releaseDate": "2月中旬発売予定",
-        "summary": "新規描き起こしグッズやフィンガーマスコットなど",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "2026年3月発売予定",
+        "summary": "うちわキーホルダー、幼稚園バッチなど",
         "note": "",
-        "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
+        "url": "https://bellhouse-shop.com/news/6971cc19bf7b8f14a54abbb9",
         "variation": "通常"
       }
     ]
@@ -233,6 +267,57 @@
         "summary": "ヒョーゴノスケさんイラストのグッズ。",
         "note": "予約終了日未定",
         "url": "https://collectionjc.com/collections/milky-subway25?srsltid=AfmBOooyZ07mchX3Mgq-Ogic-pofZ2GGV45ygfx8dKoHXoQRH7qCCpd1",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "eeostoreグッズ",
+    "brand": "",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "2026/01/08",
+        "expiresAt": "2026/01/08",
+        "releaseDate": "",
+        "summary": "",
+        "note": "",
+        "url": "https://eeo.today/store/101/title/7121",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "劇場版グッズ",
+    "brand": "",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "アクスタ、ブロマイドなど",
+        "note": "",
+        "url": "https://x.com/MGUJapan/status/2015620711063130504?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "さっぽろ雪まつりグッズ",
+    "brand": "プラリーモール",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "?",
+        "reserveTo": "?",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "雪まつりのために描き起こされたイラストを使用したグッズ",
+        "note": "予約期間等不明",
+        "url": "https://snowfes2026-milkysubway.com/",
         "variation": "通常"
       }
     ]
