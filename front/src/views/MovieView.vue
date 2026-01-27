@@ -23,11 +23,33 @@ const events = [
     place: 'ＴＯＨＯシネマズ 日比谷',
     note: '抽選申し込み期間期間：1/16（金）18:00〜1/29（木）23:59',
     url: 'https://milkygalacticuniverse.com/news/article/?post_id=392',
+  },
+  {
+    title: 'シープラ映画予告放映',
+    date: '2026/01/23	~ 2026/02/28',
+    place: '全国のシープラ（一部店舗）',
+    note: '',
+    url: 'https://x.com/toshinhokkaido/status/2014533556027203919?s=20',
+  },
+  {
+    title: '銀河特急ミルキー☆サブウェイ 銀河の果てまでいってきました！展 出張所 in 渋谷シネクイント',
+    date: '2026/02/06	~ 2026/03/05',
+    place: '渋谷シネクイント',
+    note: '銀河の果てまでいってきました！展出張開催',
+    url: 'https://art.parco.jp/otherspace/detail/?id=1861',
   }
 ]
 
 const visitorPerks = [
   { title: '第1弾', start: '2026/02/06', end: '2026/02/19', bonus: '「河野丼先生描き下ろしオリジナルミニ漫画 （全6種）' },
+]
+
+const otherItems = [
+  {
+    title: 'アナザービジュアル公開！',
+    description: 'ヨロコヴ氏によるアナザービジュアルが解禁しました。',
+    url: 'https://www.animatetimes.com/news/details.php?id=1768976983&utm_source=twitter&utm_medium=social',
+  },
 ]
 
 const links = [
@@ -116,9 +138,27 @@ const links = [
 
       <div class="panel">
         <h3>🌟グッズ🌟</h3>
-        <ul class="bullet-list">
-          <li v-for="perk in perks" :key="perk">{{ perk }}</li>
-        </ul>
+        <div class="event-body">
+          <span class="event-value">劇場版グッズ公開！公式ポストをチェック↓</span>
+          <div class="event-link">
+            <DetailLinkButton
+              :href="'https://x.com/MGUJapan/status/2015620711063130504?s=20'"
+              :label="'詳細リンク'"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel-title--green">🌟その他🌟</h3>
+        <div class="panel-divider"></div>
+        <div v-for="item in otherItems" :key="item.title" class="event-body">
+          <span class="event-value panel-title--green">{{ item.title }}</span>
+          <span class="event-note">{{ item.description }}</span>
+          <div class="event-link" v-if="item.url">
+            <DetailLinkButton :href="item.url" :label="'詳細リンク'" />
+          </div>
+        </div>
       </div>
 
       
@@ -192,6 +232,16 @@ const links = [
   color: var(--foreground);
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
+}
+
+.panel-title--green {
+  color: var(--foreground);
+}
+
+.panel-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+  margin-bottom: 0.75rem;
 }
 
 .info-table {
@@ -288,6 +338,10 @@ const links = [
 
 .event-value {
   color: #fff;
+}
+
+.event-value.panel-title--green {
+  color: var(--foreground);
 }
 
 .event-note {
