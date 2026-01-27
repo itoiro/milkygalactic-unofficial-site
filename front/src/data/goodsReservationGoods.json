@@ -84,23 +84,6 @@
       }
     ]
   },
-    {
-    "title": "一番くじちょこっと",
-    "brand": "BANDAI",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "",
-        "reserveTo": "",
-        "expiresAt": "2026/02/06",
-        "releaseDate": "2026/02/06",
-        "summary": "アクスタ、アクリルバッジ、ウラオモチャームほか",
-        "note": "オンライン販売：2026年02月06日(金)17:00より販売開始予定",
-        "url": "https://1kuji.com/products/milkygalacticuniverse",
-        "variation": "通常"
-      }
-    ]
-  },
   {
     "title": "エンスカイ新商品",
     "brand": "エンスカイ",
@@ -131,6 +114,23 @@
         "summary": "アクキー、アクスタ、缶バッジ",
         "note": "",
         "url": "https://bellhouse-shop.com/news/693f850c3fed3c2ced343129",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "一番くじちょこっと",
+    "brand": "BANDAI",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/02/06",
+        "releaseDate": "2026/02/06",
+        "summary": "アクスタ、アクリルバッジ、ウラオモチャームほか",
+        "note": "オンライン販売：2026年02月06日(金)17:00より販売開始予定",
+        "url": "https://1kuji.com/products/milkygalacticuniverse",
         "variation": "通常"
       }
     ]
@@ -170,23 +170,6 @@
     ]
   },
   {
-    "title": "カミオジャパンオリジナル描き起こし",
-    "brand": "カミオジャパン",
-    "variants": [
-      {
-        "label": "",
-        "reserveFrom": "2025/12/22",
-        "reserveTo": "-",
-        "expiresAt": "-",
-        "releaseDate": "2026年3月発売予定",
-        "summary": "オーロラ缶バッジ、アクスタ―、アクキー、クリアカード",
-        "note": "アクスタセットの購入で、缶バッジ特典あり。セット予約締め切りは2026/1/13中。",
-        "url": "https://www.animate-onlineshop.jp/corner/cc/milkygalacticuniverse-1222goods/cd/4040/",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
     "title": "FUNDOMグッズ",
     "brand": "FUNDOM",
     "variants": [
@@ -199,6 +182,23 @@
         "summary": "新規描き起こしグッズやフィンガーマスコットなど",
         "note": "",
         "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "カミオジャパンオリジナル描き起こし",
+    "brand": "カミオジャパン",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "2025/12/22",
+        "reserveTo": "-",
+        "expiresAt": "-",
+        "releaseDate": "2026年3月発売予定",
+        "summary": "オーロラ缶バッジ、アクスタ―、アクキー、クリアカード",
+        "note": "アクスタセットの購入で、缶バッジ特典あり。セット予約締め切りは2026/1/13中。",
+        "url": "https://www.animate-onlineshop.jp/corner/cc/milkygalacticuniverse-1222goods/cd/4040/",
         "variation": "通常"
       }
     ]
