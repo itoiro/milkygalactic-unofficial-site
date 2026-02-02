@@ -3,11 +3,24 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import HomeView from './views/HomeView.vue'
 import MovieView from './views/MovieView.vue'
 
-const route = ref(window.location.pathname.startsWith('/movie') ? 'movie' : 'home')
+const baseUrl = import.meta.env.BASE_URL || '/'
+const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
+const stripBase = (pathname) => {
+  if (normalizedBase === '/') {
+    return pathname
+  }
+  if (pathname.startsWith(normalizedBase)) {
+    const rest = pathname.slice(normalizedBase.length)
+    return `/${rest}`
+  }
+  return pathname
+}
+
+const route = ref(stripBase(window.location.pathname).startsWith('/movie') ? 'movie' : 'home')
 const homeSection = ref('home')
 
 const updateFromLocation = () => {
-  if (window.location.pathname.startsWith('/movie')) {
+  if (stripBase(window.location.pathname).startsWith('/movie')) {
     route.value = 'movie'
   } else {
     route.value = 'home'
@@ -16,8 +29,10 @@ const updateFromLocation = () => {
 }
 
 const pushPath = (path) => {
-  if (window.location.pathname !== path) {
-    window.history.pushState({}, '', path)
+  const trimmed = path.startsWith('/') ? path.slice(1) : path
+  const target = normalizedBase === '/' ? `/${trimmed}` : `${normalizedBase}${trimmed}`
+  if (window.location.pathname !== target) {
+    window.history.pushState({}, '', target)
   }
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
