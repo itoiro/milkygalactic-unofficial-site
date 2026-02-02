@@ -6,7 +6,7 @@ const props = defineProps({
   },
   label: {
     type: String,
-    default: '詳細リンク',
+    default: 'リンク',
   },
   fullWidth: {
     type: Boolean,
