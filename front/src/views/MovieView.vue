@@ -148,7 +148,7 @@ const links = [
                 <span class="event-note">{{ ev.note }}</span>
               </div>
               <div class="event-link" v-if="ev.url">
-                <DetailLinkButton :href="ev.url" :label="'詳細リンク'" />
+                <DetailLinkButton :href="ev.url" :label="'リンク'" />
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ const links = [
               <span class="event-value panel-title--green">{{ item.title }}</span>
               <span class="event-note">{{ item.description || '—' }}</span>
               <div class="event-link" v-if="item.url">
-                <DetailLinkButton :href="item.url" :label="'詳細リンク'" />
+                <DetailLinkButton :href="item.url" :label="'リンク'" />
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@ const links = [
           <span class="event-value panel-title--green">{{ item.title }}</span>
           <span class="event-note">{{ item.description }}</span>
           <div class="event-link" v-if="item.url">
-            <DetailLinkButton :href="item.url" :label="'詳細リンク'" />
+            <DetailLinkButton :href="item.url" :label="'リンク'" />
           </div>
         </div>
       </div>
