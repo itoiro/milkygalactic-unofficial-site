@@ -21,7 +21,7 @@ const events = [
     title: '舞台挨拶',
     date: '2026/02/07 17:50の回（上映後舞台挨拶）／20:15の回（上映前舞台挨拶）',
     place: 'ＴＯＨＯシネマズ 日比谷',
-    note: '抽選申し込み期間期間：1/16（金）18:00〜1/29（木）23:59',
+    note: '抽選申し込み期間：1/16（金）18:00〜1/29（木）23:59',
     url: 'https://milkygalacticuniverse.com/news/article/?post_id=392',
   },
   {
@@ -37,6 +37,13 @@ const events = [
     place: '渋谷シネクイント',
     note: '銀河の果てまでいってきました！展出張開催',
     url: 'https://art.parco.jp/otherspace/detail/?id=1861',
+  },
+  {
+    title: '亀山陽平監督トークイベント付き上映',
+    date: '2026/02/21	1回目：ＴＯＨＯシネマズ 日比谷　12:00の回（上映後トークイベント）/ 2回目：シネクイント　14:40の回（上映後トークイベント）',
+    place: 'ＴＯＨＯシネマズ 日比谷 または 渋谷シネクイント',
+    note: '抽選申込期間： 1/30（金）21:00〜2/12（木）23:59',
+    url: 'https://art.parco.jp/otherspace/detail/?id=1861',
   }
 ]
 
@@ -49,6 +56,34 @@ const otherItems = [
     title: 'アナザービジュアル公開！',
     description: 'ヨロコヴ氏によるアナザービジュアルが解禁しました。',
     url: 'https://www.animatetimes.com/news/details.php?id=1768976983&utm_source=twitter&utm_medium=social',
+  },
+]
+
+const goodsItems = [
+  {
+    title: '劇場版グッズ',
+    description: 'アクスタなど',
+    url: 'https://x.com/MGUJapan/status/2015620711063130504?s=20',
+  },
+  {
+    title: '劇場版パンフレット',
+    description: 'B5サイズ／44ページ　クリアファイル付',
+    url: 'https://x.com/MGUJapan/status/2017115560409202828?s=20',
+  },
+  {
+    title: 'ポッピーくんドリンクカップホルダー',
+    description: 'ストロー部分にポッピーくんフィギュア付き。',
+    url: 'https://www.tops-jp.com/movie/milkysubway/drinkcupholder/',
+  },
+  {
+    title: 'オリジナルポップコーン袋＆オーロラ☆アクリルキーホルダー（全8種・ランダム）',
+    description: 'オーロラ☆アクリルキーホルダー（全8種・ランダム：チハル、マキナ、カナタ、アカネ、カート、マックス、リョーコ、アサミ）',
+    url: 'https://tjoy.co.jp/news/info/642',
+  },
+  {
+    title: 'シネクイントコラボドリンク',
+    description: 'レモンスカッシュ。コースター付き（全４種・ランダム：チハルとマキナ、カナタとアカネ、カートとマックス、リョーコとアサミとハガー）',
+    url: 'https://x.com/cinequinto/status/2018248028121903117?s=20',
   },
 ]
 
@@ -138,13 +173,16 @@ const links = [
 
       <div class="panel">
         <h3>🌟グッズ🌟</h3>
-        <div class="event-body">
-          <span class="event-value">劇場版グッズ公開！公式ポストをチェック↓</span>
-          <div class="event-link">
-            <DetailLinkButton
-              :href="'https://x.com/MGUJapan/status/2015620711063130504?s=20'"
-              :label="'詳細リンク'"
-            />
+        <div class="panel-divider"></div>
+        <div class="event-list goods-list">
+          <div v-for="item in goodsItems" :key="item.title" class="event-card">
+            <div class="event-body">
+              <span class="event-value panel-title--green">{{ item.title }}</span>
+              <span class="event-note">{{ item.description || '—' }}</span>
+              <div class="event-link" v-if="item.url">
+                <DetailLinkButton :href="item.url" :label="'詳細リンク'" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -304,6 +342,11 @@ const links = [
 .event-card {
   padding: 0.75rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.goods-list .event-card:first-child {
+  border-top: none;
+  padding-top: 0;
 }
 
 .event-header {
