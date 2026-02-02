@@ -102,6 +102,23 @@
     ]
   },
   {
+    "title": "camos store",
+    "brand": "camos store",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/02/10",
+        "reserveTo": "2026/03/3 12:00",
+        "expiresAt": "2026/03/3",
+        "releaseDate": "",
+        "summary": "フィンガーマスコット、Tシャツなど",
+        "note": "4,000円以上購入ごとにクリアカードプレゼント",
+        "url": "https://camos-store.com/collections/milkysubway",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "エンスカイ新商品",
     "brand": "エンスカイ",
     "variants": [
@@ -187,23 +204,6 @@
     ]
   },
   {
-    "title": "FUNDOMグッズ",
-    "brand": "FUNDOM",
-    "variants": [
-      {
-        "label": "",
-        "reserveFrom": "",
-        "reserveTo": "-",
-        "expiresAt": "2026/02/28",
-        "releaseDate": "2月中旬発売予定",
-        "summary": "新規描き起こしグッズやフィンガーマスコットなど",
-        "note": "",
-        "url": "https://x.com/Charart11/status/2011996916792639637?s=20",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
     "title": "カミオジャパンオリジナル描き起こし",
     "brand": "カミオジャパン",
     "variants": [
@@ -233,6 +233,23 @@
         "summary": "うちわキーホルダー、幼稚園バッチなど",
         "note": "",
         "url": "https://bellhouse-shop.com/news/6971cc19bf7b8f14a54abbb9",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "カードウエハース",
+    "brand": "バンダイ",
+    "variants": [
+      {
+        "label": "",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/07/01",
+        "releaseDate": "2026年6月発売",
+        "summary": "",
+        "note": "",
+        "url": "https://www.bandai.co.jp/candy/products/2026/4570117931987000.html",
         "variation": "通常"
       }
     ]
