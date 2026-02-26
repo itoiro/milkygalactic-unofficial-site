@@ -39,6 +39,13 @@ const events = [
     url: 'https://art.parco.jp/otherspace/detail/?id=1861',
   },
   {
+    title: '発声よし、出発進行上映',
+    date: '2026/02/14 ~ -',
+    place: '対象の劇場',
+    note: '',
+    url: 'https://milkygalacticuniverse.com/news/article/?post_id=525',
+  },
+  {
     title: '亀山陽平監督トークイベント付き上映',
     date: '2026/02/21	1回目：ＴＯＨＯシネマズ 日比谷　12:00の回（上映後トークイベント）/ 2回目：シネクイント　14:40の回（上映後トークイベント）',
     place: 'ＴＯＨＯシネマズ 日比谷 または 渋谷シネクイント',

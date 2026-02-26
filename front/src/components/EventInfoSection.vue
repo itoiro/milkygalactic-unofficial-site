@@ -1,6 +1,48 @@
 <script setup>
+import { computed } from 'vue'
 import ongoingEvents from '../data/ongoingEvents.json'
 import DetailLinkButton from './DetailLinkButton.vue'
+
+const parseEventDateMs = (value) => {
+  if (!value) return Number.POSITIVE_INFINITY
+  const text = String(value).trim()
+  if (text === '-' || text === '?') return Number.POSITIVE_INFINITY
+
+  if (text.includes('/')) {
+    const parts = text.replace(/年|月/g, '/').replace(/日/g, '').split('/').filter(Boolean)
+    if (parts.length >= 3) {
+      const [year, month, day] = parts.map(Number)
+      const dt = new Date(Date.UTC(year, month - 1, day))
+      return Number.isFinite(dt.getTime()) ? dt.getTime() : Number.POSITIVE_INFINITY
+    }
+  }
+
+  const yearMatch = text.match(/(\d{4})/)
+  if (!yearMatch) return Number.POSITIVE_INFINITY
+  const year = Number(yearMatch[1])
+  const rest = text.slice(yearMatch.index + yearMatch[0].length)
+  const monthMatch = rest.match(/(\d{1,2})/)
+  const month = monthMatch ? Number(monthMatch[1]) : 12
+  let day = 28
+  if (text.includes('上旬')) day = 5
+  else if (text.includes('中旬')) day = 15
+  else if (text.includes('下旬')) day = 25
+
+  const dt = new Date(Date.UTC(year, month - 1, day))
+  return Number.isFinite(dt.getTime()) ? dt.getTime() : Number.POSITIVE_INFINITY
+}
+
+const filteredEvents = computed(() => {
+  const now = Date.now()
+  return ongoingEvents.filter((event) => {
+    const endMs = parseEventDateMs(event.endDate)
+    if (Number.isFinite(endMs) && endMs !== Number.POSITIVE_INFINITY) {
+      return endMs >= now
+    }
+    const startMs = parseEventDateMs(event.startDate)
+    return startMs >= now
+  })
+})
 </script>
 
 <template>
@@ -9,7 +51,7 @@ import DetailLinkButton from './DetailLinkButton.vue'
     <div class="space-y-4">
       <div class="mobile-only space-y-3">
         <div
-          v-for="event in ongoingEvents"
+          v-for="event in filteredEvents"
           :key="`mobile-${event.name}`"
           class="event-card bg-card/80 p-3 space-y-2"
         >
@@ -41,7 +83,7 @@ import DetailLinkButton from './DetailLinkButton.vue'
           </thead>
           <tbody>
             <tr
-              v-for="event in ongoingEvents"
+              v-for="event in filteredEvents"
               :key="event.name"
               class="border-b border-foreground/30 last:border-0"
             >
