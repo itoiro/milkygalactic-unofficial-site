@@ -117,5 +117,39 @@
         "variation": "通常"
       }
     ]
+  },
+  {
+    "title": "劇場版グッズ（シンエイ ONLINE STORE）",
+    "brand": "シンエイ",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/03/03 12:00",
+        "reserveTo": "2026/03/22 11:59",
+        "expiresAt": "2026/03/22",
+        "releaseDate": "",
+        "summary": "",
+        "note": "",
+        "url": "https://t.co/GyHVLpGaK9",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "劇場版グッズ（A-on STORE）",
+    "brand": "A-on STORE",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/03/03 12:00",
+        "reserveTo": "2026/03/22 11:59",
+        "expiresAt": "2026/03/22",
+        "releaseDate": "",
+        "summary": "",
+        "note": "",
+        "url": "https://t.co/itJUQGyeOf",
+        "variation": "通常"
+      }
+    ]
   }
 ]
