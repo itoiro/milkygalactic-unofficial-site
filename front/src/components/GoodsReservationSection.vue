@@ -3,6 +3,7 @@ import goodsReservationGoods from '../data/goodsReservationGoods.json'
 import goodsReservationMedia from '../data/goodsReservationMedia.json'
 import priseInfo from '../data/priseInfo.json'
 import capsuleToyInfo from '../data/capsuleToyInfo.json'
+import eventGoodsMailOrder from '../data/eventGoodsMailOrder.json'
 import DetailLinkButton from './DetailLinkButton.vue'
 
 const parseDateMs = (value) => {
@@ -32,9 +33,16 @@ const buildGrouped = (source) =>
 
 const prizeLikeKeys = new Set(['capsule', 'prize'])
 const isPrizeLike = (key) => prizeLikeKeys.has(key)
+const isEventGoods = (key) => key === 'eventGoods'
+const columnCountForSection = (key) => {
+  if (isPrizeLike(key)) return 4
+  if (isEventGoods(key)) return 6
+  return 5
+}
 
 const sections = [
   { key: 'goods', title: 'グッズ予約情報', groups: buildGrouped(goodsReservationGoods) },
+  { key: 'eventGoods', title: 'イベントグッズ通販情報', groups: buildGrouped(eventGoodsMailOrder) },
   { key: 'media', title: '映像/書籍予約情報', groups: buildGrouped(goodsReservationMedia) },
   { key: 'capsule', title: 'カプセルトイ情報', groups: buildGrouped(capsuleToyInfo) },
   { key: 'prize', title: 'プライズ情報', groups: buildGrouped(priseInfo) },
@@ -70,12 +78,18 @@ const sections = [
 
               <template v-if="group.variants.length === 1">
                 <div class="space-y-2 text-sm">
-                  <div v-if="!isPrizeLike(section.key) && group.variants[0].reserveTo" class="flex items-start gap-2">
-                    <span class="label-text">予約〆</span>
-                    <span class="value-text date-inline">{{ group.variants[0].reserveTo || '—' }}</span>
-                  </div>
+                  <template v-if="!isPrizeLike(section.key)">
+                    <div v-if="isEventGoods(section.key) && group.variants[0].reserveFrom" class="flex items-start gap-2">
+                      <span class="label-text">通販開始</span>
+                      <span class="value-text date-inline">{{ group.variants[0].reserveFrom || '—' }}</span>
+                    </div>
+                    <div v-if="group.variants[0].reserveTo" class="flex items-start gap-2">
+                      <span class="label-text">{{ isEventGoods(section.key) ? '通販終了' : '予約〆' }}</span>
+                      <span class="value-text date-inline">{{ group.variants[0].reserveTo || '—' }}</span>
+                    </div>
+                  </template>
                   <div v-if="group.variants[0].releaseDate" class="flex items-start gap-2">
-                    <span class="label-text">発売日</span>
+                    <span class="label-text">{{ isEventGoods(section.key) ? 'お届け予定日' : '発売日' }}</span>
                     <span class="value-text date-inline">{{ group.variants[0].releaseDate || '—' }}</span>
                   </div>
                   <div v-if="group.variants[0].summary || group.variants[0].note">
@@ -110,12 +124,18 @@ const sections = [
                       <div class="font-semibold text-base mb-1 group-title">
                         {{ variant.variation || variant.label || '通常' }}
                       </div>
-                      <div v-if="!isPrizeLike(section.key) && variant.reserveTo" class="flex items-start gap-2">
-                        <span class="label-text">予約〆</span>
-                        <span class="value-text date-inline">{{ variant.reserveTo || '—' }}</span>
-                      </div>
+                      <template v-if="!isPrizeLike(section.key)">
+                        <div v-if="isEventGoods(section.key) && variant.reserveFrom" class="flex items-start gap-2">
+                          <span class="label-text">通販開始</span>
+                          <span class="value-text date-inline">{{ variant.reserveFrom || '—' }}</span>
+                        </div>
+                        <div v-if="variant.reserveTo" class="flex items-start gap-2">
+                          <span class="label-text">{{ isEventGoods(section.key) ? '通販終了' : '予約〆' }}</span>
+                          <span class="value-text date-inline">{{ variant.reserveTo || '—' }}</span>
+                        </div>
+                      </template>
                       <div v-if="variant.releaseDate" class="flex items-start gap-2 mt-1">
-                        <span class="label-text">発売日</span>
+                        <span class="label-text">{{ isEventGoods(section.key) ? 'お届け予定日' : '発売日' }}</span>
                         <span class="value-text date-inline">{{ variant.releaseDate || '—' }}</span>
                       </div>
                     </div>
@@ -142,8 +162,10 @@ const sections = [
               <tr class="text-left border-b border-foreground/50">
                 <th class="py-2 px-3 whitespace-nowrap">商品概要</th>
                 <!-- <th class="py-2 px-3 whitespace-nowrap">予約開始</th> -->
-                <th v-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">予約〆</th>
-                <th class="py-2 px-3 whitespace-nowrap">発売日</th>
+                <th v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">通販開始</th>
+                <th v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">通販終了</th>
+                <th v-else-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">予約〆</th>
+                <th class="py-2 px-3 whitespace-nowrap">{{ isEventGoods(section.key) ? 'お届け予定日' : '発売日' }}</th>
                 <th class="py-2 px-3">概要/備考</th>
                 <th class="py-2 px-3 whitespace-nowrap">リンク</th>
               </tr>
@@ -154,9 +176,14 @@ const sections = [
                     <tr class="border-b border-muted/40 last:border-b-0 row-equal-height">
                     <td class="py-2 px-3 whitespace-nowrap">
                       <div class="font-semibold">{{ group.title }}</div>
-                      <div v-if="group.brand" class="text-xs text-muted-foreground mt-1">{{ group.brand }}</div>
                     </td>
-                    <td v-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">
+                    <td v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">
+                      {{ group.variants[0].reserveFrom || '—' }}
+                    </td>
+                    <td v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">
+                      {{ group.variants[0].reserveTo || '—' }}
+                    </td>
+                    <td v-else-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">
                       {{ group.variants[0].reserveTo || '—' }}
                     </td>
                     <td class="py-2 px-3 whitespace-nowrap">{{ group.variants[0].releaseDate || '—' }}</td>
@@ -174,9 +201,8 @@ const sections = [
                 </template>
                 <template v-else>
                   <tr class="group-row">
-                    <td class="py-2 px-3 font-semibold" :colspan="isPrizeLike(section.key) ? 4 : 5">
+                    <td class="py-2 px-3 font-semibold" :colspan="columnCountForSection(section.key)">
                       <div class="font-semibold">{{ group.title }}</div>
-                      <div v-if="group.brand" class="text-xs text-muted-foreground mt-1">{{ group.brand }}</div>
                     </td>
                   </tr>
                   <tr
@@ -187,9 +213,10 @@ const sections = [
                     <td class="py-2 px-3 whitespace-nowrap">
                       <span class="text-muted-foreground mr-2">└ </span>
                       <span>{{ variant.variation || variant.label || '通常' }}</span>
-                      <span v-if="group.brand" class="text-xs text-muted-foreground ml-1">/ {{ group.brand }}</span>
                     </td>
-                    <td v-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">{{ variant.reserveTo || '—' }}</td>
+                    <td v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">{{ variant.reserveFrom || '—' }}</td>
+                    <td v-if="isEventGoods(section.key)" class="py-2 px-3 whitespace-nowrap">{{ variant.reserveTo || '—' }}</td>
+                    <td v-else-if="!isPrizeLike(section.key)" class="py-2 px-3 whitespace-nowrap">{{ variant.reserveTo || '—' }}</td>
                     <td class="py-2 px-3 whitespace-nowrap">{{ variant.releaseDate || '—' }}</td>
                     <td class="py-2 px-3">
                       <div>{{ variant.summary || '—' }}</div>

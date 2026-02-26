@@ -56,10 +56,45 @@
     "url": "https://www.animate-onlineshop.jp/contents/fair_event/detail.php?id=114264&srsltid=AfmBOorOeSDpA8Tfas5iiJA8lHkfBr-gLHEsJ5rXUfWs7FJjywGelKNk"
   },
   {
+    "name": "発声よし、出発進行上映",
+    "startDate": "2026/02/14",
+    "endDate": "-",
+    "location": "リンク先参照",
+    "url": "https://milkygalacticuniverse.com/news/article/?post_id=525"
+  },
+  {
+    "name": "マンガ展 ポップアップストア凱旋",
+    "startDate": "2026/02/18",
+    "endDate": "2026/03/14",
+    "location": "リンク先参照",
+    "url": "https://www.manga10.com/event/3807"
+  },
+  {
+    "name": "YURINAN -ゆうりんあんコラボ",
+    "startDate": "2026/02/20",
+    "endDate": "2026/04/05",
+    "location": "リンク先参照",
+    "url": "https://prtimes.jp/main/html/rd/p/000000004.000174272.html"
+  },
+  {
+    "name": "銀河特急 ミルキー☆サブウェイ 銀河の果てまでいってきました！展 心斎橋PARCO",
+    "startDate": "2026/04/04",
+    "endDate": "2026/04/19",
+    "location": "心斎橋PARCO",
+    "url": "https://art.parco.jp/eventhall/detail/?id=1852"
+  },
+  {
     "name": "Blu-ray発売記念イベント（抽選）",
     "startDate": "2026/05/10",
     "endDate": "-",
     "location": "アニメイト池袋本店",
     "url": "https://www.animate-onlineshop.jp/contents/fair_event/detail.php?id=114774"
+  },
+  {
+    "name": "銀河特急 ミルキー☆サブウェイ 銀河の果てまでいってきました！展 静岡PARCO",
+    "startDate": "2026年5月下旬",
+    "endDate": "2026年6月下旬",
+    "location": "静岡PARCO",
+    "url": "https://art.parco.jp/shizuoka/detail/?id=1855"
   }
 ]

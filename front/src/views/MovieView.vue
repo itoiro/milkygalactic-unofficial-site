@@ -39,6 +39,13 @@ const events = [
     url: 'https://art.parco.jp/otherspace/detail/?id=1861',
   },
   {
+    title: '発声よし、出発進行上映',
+    date: '2026/02/14 ~ -',
+    place: '対象の劇場',
+    note: '',
+    url: 'https://milkygalacticuniverse.com/news/article/?post_id=525',
+  },
+  {
     title: '亀山陽平監督トークイベント付き上映',
     date: '2026/02/21	1回目：ＴＯＨＯシネマズ 日比谷　12:00の回（上映後トークイベント）/ 2回目：シネクイント　14:40の回（上映後トークイベント）',
     place: 'ＴＯＨＯシネマズ 日比谷 または 渋谷シネクイント',
@@ -49,6 +56,8 @@ const events = [
 
 const visitorPerks = [
   { title: '第1弾', start: '2026/02/06', end: '2026/02/19', bonus: '「河野丼先生描き下ろしオリジナルミニ漫画 （全6種）' },
+  { title: '第2弾', start: '2026/02/20', end: '2026/02/26', bonus: 'アナザービジュアルステッカー' },
+  { title: '第3弾', start: '2026/02/27', end: '2026/03/05', bonus: '亀山陽平監督描き下ろしミニ色紙' },
 ]
 
 const otherItems = [
@@ -57,6 +66,11 @@ const otherItems = [
     description: 'ヨロコヴ氏によるアナザービジュアルが解禁しました。',
     url: 'https://www.animatetimes.com/news/details.php?id=1768976983&utm_source=twitter&utm_medium=social',
   },
+  {
+    title: '上映館拡大決定！',
+    description: '3/6（金）より75館の追加上映館が決定！',
+    url: 'https://eigakan.org/theaterpage/schedule.php?t=milkygalacticuniverse',
+  },
 ]
 
 const goodsItems = [
@@ -64,6 +78,16 @@ const goodsItems = [
     title: '劇場版グッズ',
     description: 'アクスタなど',
     url: 'https://x.com/MGUJapan/status/2015620711063130504?s=20',
+  },
+  {
+    title: '劇場版グッズ通販：シンエイ ONLINE STORE',
+    description: '3/3(火)12:00～3/22(日)昼11:59',
+    url: 'https://t.co/GyHVLpGaK9',
+  },
+  {
+    title: '劇場版グッズ通販：A-on STORE',
+    description: '3/3(火)12:00～3/22(日)昼11:59',
+    url: 'https://t.co/itJUQGyeOf',
   },
   {
     title: '劇場版パンフレット',
@@ -190,11 +214,15 @@ const links = [
       <div class="panel">
         <h3 class="panel-title--green">🌟その他🌟</h3>
         <div class="panel-divider"></div>
-        <div v-for="item in otherItems" :key="item.title" class="event-body">
-          <span class="event-value panel-title--green">{{ item.title }}</span>
-          <span class="event-note">{{ item.description }}</span>
-          <div class="event-link" v-if="item.url">
-            <DetailLinkButton :href="item.url" :label="'リンク'" />
+        <div class="event-list other-list">
+          <div v-for="item in otherItems" :key="item.title" class="event-card">
+            <div class="event-body">
+              <span class="event-value panel-title--green">{{ item.title }}</span>
+              <span class="event-note">{{ item.description }}</span>
+              <div class="event-link" v-if="item.url">
+                <DetailLinkButton :href="item.url" :label="'リンク'" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -345,6 +373,11 @@ const links = [
 }
 
 .goods-list .event-card:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.other-list .event-card:first-child {
   border-top: none;
   padding-top: 0;
 }
