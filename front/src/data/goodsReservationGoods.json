@@ -1,22 +1,5 @@
 [
   {
-    "title": "マンガ展ストア",
-    "brand": "マンガ展",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "2025/11/07",
-        "reserveTo": "2026/01/12",
-        "expiresAt": "2026/01/12",
-        "releaseDate": "",
-        "summary": "キービジュアルアクスタ、マグショットブロマイド、衣装モチーフアクキー ほか",
-        "note": "ポップアップストアにて店頭販売しているグッズ。予約〆は通販終了日。",
-        "url": "https://www.manga10.com/event/3636",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
     "title": "アイムスリーショップ",
     "brand": "アイムスリー",
     "variants": [
@@ -58,28 +41,11 @@
         "label": "",
         "reserveFrom": "2026/01/19",
         "reserveTo": "2026/02/18",
-        "expiresAt": "2026/07/15",
+        "expiresAt": "2026/02/18",
         "releaseDate": "2026年07月発送予定",
         "summary": "マキナとチハルのぬいぐるみ",
         "note": "2026年07月発送予定",
         "url": "https://www.goodsmile.com/ja/product/1141272/%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF+%E3%83%9E%E3%82%AD%E3%83%8A+%E3%83%81%E3%83%8F%E3%83%AB",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
-    "title": "KUROBOSHICHURROS コラボ",
-    "brand": "KUROBOSHICHURROS",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "2026/01/09",
-        "reserveTo": "2026/02/28",
-        "expiresAt": "",
-        "releaseDate": "",
-        "summary": "缶バッジ、証明写真風シール、ネームプレート",
-        "note": "予約〆は特典受注期間。通販サイトで3300円以上購入ごとに特典ミニカードプレゼント（ランダム全8種）",
-        "url": "https://rencontre-ip.store/blogs/news/2026-01-09-milkygalacticuniverse",
         "variation": "通常"
       }
     ]
@@ -102,6 +68,23 @@
     ]
   },
   {
+    "title": "mochocho",
+    "brand": "シンクイノベーション",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/02/09",
+        "reserveTo": "2026/03/02",
+        "expiresAt": "2026/03/02",
+        "releaseDate": "",
+        "summary": "3D風のぷっくり見えるデザインや作中のシーンを再現したデザインなどのグッズ",
+        "note": "",
+        "url": "https://x.com/MGUJapan/status/2020709241573560558?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "camos store",
     "brand": "camos store",
     "variants": [
@@ -119,6 +102,57 @@
     ]
   },
   {
+    "title": "もちころりん",
+    "brand": "",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/02/13",
+        "reserveTo": "2026/03/16",
+        "expiresAt": "2026/03/16",
+        "releaseDate": "2026年6月発売",
+        "summary": "",
+        "note": "",
+        "url": "https://shinei-shop.com/blogs/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/%E9%8A%80%E6%B2%B3%E7%89%B9%E6%80%A5-%E3%83%9F%E3%83%AB%E3%82%AD%E3%83%BC-%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%82%A4-%E5%90%84%E9%A7%85%E5%81%9C%E8%BB%8A%E5%8A%87%E5%A0%B4%E8%A1%8C%E3%81%8D-%E3%82%82%E3%81%A1%E3%81%93%E3%82%8D%E3%82%8A%E3%82%93%E3%83%9E%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E3%81%AE%E4%BA%88%E7%B4%84%E5%8F%97%E6%B3%A8%E3%82%92%E9%96%8B%E5%A7%8B",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "カミオジャパン描きおろしグッズ",
+    "brand": "カミオジャパン",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/02/25",
+        "reserveTo": "2026/03/16",
+        "expiresAt": "2026/03/16",
+        "releaseDate": "",
+        "summary": "描き起こしイラスト第2弾のグッズ",
+        "note": "アニメイト通販ではミニアクリルスタンドセットの予約特典あり",
+        "url": "https://www.animate-onlineshop.jp/corner/cc/milkygalacticuniverse-0225goods/cd/4184/",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "カートとマックスのぬいぐるみ",
+    "brand": "グッドスマイルカンパニー",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "2026/02/24",
+        "reserveTo": "2026/03/25",
+        "expiresAt": "2026/03/25",
+        "releaseDate": "",
+        "summary": "",
+        "note": "",
+        "url": "https://t.co/pi6HbdToyX",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
     "title": "エンスカイ新商品",
     "brand": "エンスカイ",
     "variants": [
@@ -126,7 +160,7 @@
         "label": "通常",
         "reserveFrom": "",
         "reserveTo": "",
-        "expiresAt": "",
+        "expiresAt": "2026/02/25",
         "releaseDate": "2026年2月初回出荷予定",
         "summary": "おまんじゅうにぎにぎマスコット、トランプ、カセットテープ風アクリルキーチェーン ほか",
         "note": "予約期間不明",
@@ -177,7 +211,7 @@
         "label": "通常",
         "reserveFrom": "",
         "reserveTo": "",
-        "expiresAt": "",
+        "expiresAt": "2026/02/13",
         "releaseDate": "2026/02/13",
         "summary": "ブシロード トレーディングカード コレクションクリア",
         "note": "",
@@ -194,7 +228,7 @@
         "label": "通常",
         "reserveFrom": "",
         "reserveTo": "",
-        "expiresAt": "",
+        "expiresAt": "2026/02/20",
         "releaseDate": "2026/02/20",
         "summary": "トレカスリーブ、デッキケース、ラバーマット",
         "note": "",
@@ -255,23 +289,6 @@
     ]
   },
   {
-    "title": "RED° TOKYO TOWER イベントグッズ",
-    "brand": "Collection.jc",
-    "variants": [
-      {
-        "label": "通常",
-        "reserveFrom": "2025/10/17",
-        "reserveTo": "",
-        "expiresAt": "",
-        "releaseDate": "",
-        "summary": "ヒョーゴノスケさんイラストのグッズ。",
-        "note": "予約終了日未定",
-        "url": "https://collectionjc.com/collections/milky-subway25?srsltid=AfmBOooyZ07mchX3Mgq-Ogic-pofZ2GGV45ygfx8dKoHXoQRH7qCCpd1",
-        "variation": "通常"
-      }
-    ]
-  },
-  {
     "title": "eeostoreグッズ",
     "brand": "",
     "variants": [
@@ -296,7 +313,7 @@
         "label": "通常",
         "reserveFrom": "",
         "reserveTo": "",
-        "expiresAt": "",
+        "expiresAt": "2026/02/25",
         "releaseDate": "",
         "summary": "アクスタ、ブロマイドなど",
         "note": "",
@@ -306,18 +323,120 @@
     ]
   },
   {
-    "title": "さっぽろ雪まつりグッズ",
-    "brand": "プラリーモール",
+    "title": "CS.FRONT",
+    "brand": "CS.FRONT",
     "variants": [
       {
-        "label": "",
-        "reserveFrom": "?",
-        "reserveTo": "?",
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
         "expiresAt": "",
         "releaseDate": "",
-        "summary": "雪まつりのために描き起こされたイラストを使用したグッズ",
-        "note": "予約期間等不明",
-        "url": "https://snowfes2026-milkysubway.com/",
+        "summary": "新規描き起こしイラスト各種グッズ",
+        "note": "",
+        "url": "https://www.crysto.jp/milkygalacticuniverse",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "ちょこりんコレクション＆つみちぇん",
+    "brand": "",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "",
+        "note": "",
+        "url": "https://x.com/megahouse_tori/status/2019697584416395498?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "アベイルコラボ",
+    "brand": "アベイル",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/02/14",
+        "releaseDate": "2026/02/14",
+        "summary": "アパレル",
+        "note": "",
+        "url": "https://www.shop-shimamura.com/?b=avail",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "カップヌードルコラボ",
+    "brand": "",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "",
+        "summary": "カップヌードル＋アクリル二止め（2個※ランダム）",
+        "note": "",
+        "url": "https://store.nissin.com/pages/2602milkysubway",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "しまむらコラボ",
+    "brand": "しまむら",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "2026/02/13",
+        "releaseDate": "2026/02/13",
+        "summary": "",
+        "note": "",
+        "url": "https://x.com/MGUJapan/status/2022113497820099048?s=20",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "エンスカイ",
+    "brand": "エンスカイ",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "2026年5月発売",
+        "summary": "クリアカードコレクションガム、キャラカットステッカーガム",
+        "note": "",
+        "url": "https://www.enskyshop.com/products/list?character_id=13933",
+        "variation": "通常"
+      }
+    ]
+  },
+  {
+    "title": "サイクルウェア",
+    "brand": "グッドスマイルカンパニー",
+    "variants": [
+      {
+        "label": "通常",
+        "reserveFrom": "",
+        "reserveTo": "",
+        "expiresAt": "",
+        "releaseDate": "2026年5月発売",
+        "summary": "",
+        "note": "",
+        "url": "https://t.co/jkekyPK4wW",
         "variation": "通常"
       }
     ]
