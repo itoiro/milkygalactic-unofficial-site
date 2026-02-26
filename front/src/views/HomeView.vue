@@ -119,6 +119,7 @@ const mediaItems = [
         </div>
       </CategoryGroupSection>
 
+      <!--
       <SectionSeparator />
       <CategoryGroupSection
         :items="[]"
@@ -128,6 +129,7 @@ const mediaItems = [
       >
         <CalendarEmbedSection />
       </CategoryGroupSection>
+      -->
 
       <TerminalConsole />
     </section>
